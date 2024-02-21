@@ -1,0 +1,173 @@
+{
+  "professor": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "email": "joao.silva@example.com",
+      "senha": "senha123",
+      "especializacao": "Matemática",
+      "preferenciaHorario": "Tarde",
+      "turmasAnteriores": ["Turma A", "Turma B"],
+      "cargaHoraria": 40.5
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "email": "maria.oliveira@example.com",
+      "senha": "senha456",
+      "especializacao": "Português",
+      "preferenciaHorario": "Manhã",
+      "turmasAnteriores": ["Turma C"],
+      "cargaHoraria": 35.0
+    },
+    {
+      "id": 3,
+      "nome": "Carlos Santos",
+      "email": "carlos.santos@example.com",
+      "senha": "senha789",
+      "especializacao": "História",
+      "preferenciaHorario": "Tarde",
+      "turmasAnteriores": ["Turma D", "Turma E"],
+      "cargaHoraria": 38.0
+    },
+    {
+      "id": 4,
+      "nome": "Ana Lima",
+      "email": "ana.lima@example.com",
+      "senha": "senhaabc",
+      "especializacao": "Biologia",
+      "preferenciaHorario": "Manhã",
+      "turmasAnteriores": ["Turma F"],
+      "cargaHoraria": 42.5
+    },
+    {
+      "id": 5,
+      "nome": "Pedro Costa",
+      "email": "pedro.costa@example.com",
+      "senha": "senhadef",
+      "especializacao": "Química",
+      "preferenciaHorario": "Noite",
+      "turmasAnteriores": ["Turma G"],
+      "cargaHoraria": 37.0
+    },
+    {
+      "id": 6,
+      "nome": "Juliana Pereira",
+      "email": "juliana.pereira@example.com",
+      "senha": "senhaghi",
+      "especializacao": "Geografia",
+      "preferenciaHorario": "Tarde",
+      "turmasAnteriores": ["Turma H"],
+      "cargaHoraria": 39.0
+    },
+    {
+      "id": 7,
+      "nome": "Lucas Martins",
+      "email": "lucas.martins@example.com",
+      "senha": "senhajkl",
+      "especializacao": "Física",
+      "preferenciaHorario": "Manhã",
+      "turmasAnteriores": ["Turma I"],
+      "cargaHoraria": 40.0
+    },
+    {
+      "id": 8,
+      "nome": "Fernanda Sousa",
+      "email": "fernanda.sousa@example.com",
+      "senha": "senhamno",
+      "especializacao": "Educação Física",
+      "preferenciaHorario": "Tarde",
+      "turmasAnteriores": ["Turma J"],
+      "cargaHoraria": 36.5
+    },
+    {
+      "id": 9,
+      "nome": "Gabriel Oliveira",
+      "email": "gabriel.oliveira@example.com",
+      "senha": "senhopqr",
+      "especializacao": "Artes",
+      "preferenciaHorario": "Manhã",
+      "turmasAnteriores": ["Turma K"],
+      "cargaHoraria": 41.0
+    },
+    {
+      "id": 10,
+      "nome": "Camila Almeida",
+      "email": "camila.almeida@example.com",
+      "senha": "senhostu",
+      "especializacao": "Inglês",
+      "preferenciaHorario": "Noite",
+      "turmasAnteriores": ["Turma L"],
+      "cargaHoraria": 37.5
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": 1,
+      "disciplina": "Matemática",
+      "professor": "João Silva",
+      "cargaHoraria": 40.5,
+      "turmas": ["Turma A", "Turma B"]
+    },
+    {
+      "id": 2,
+      "disciplina": "Português",
+      "professor": "Maria Oliveira",
+      "cargaHoraria": 35.0,
+      "turmas": ["Turma C"]
+    },
+    {
+      "id": 3,
+      "disciplina": "História",
+      "professor": "Carlos Santos",
+      "cargaHoraria": 38.0,
+      "turmas": ["Turma D", "Turma E"]
+    },
+    {
+      "id": 4,
+      "disciplina": "Biologia",
+      "professor": "Ana Lima",
+      "cargaHoraria": 42.5,
+      "turmas": ["Turma F"]
+    },
+    {
+      "id": 5,
+      "disciplina": "Química",
+      "professor": "Pedro Costa",
+      "cargaHoraria": 37.0,
+      "turmas": ["Turma G"]
+    },
+    {
+      "id": 6,
+      "disciplina": "Geografia",
+      "professor": "Juliana Pereira",
+      "cargaHoraria": 39.0,
+      "turmas": ["Turma H"]
+    },
+    {
+      "id": 7,
+      "disciplina": "Física",
+      "professor": "Lucas Martins",
+      "cargaHoraria": 40.0,
+      "turmas": ["Turma I"]
+    },
+    {
+      "id": 8,
+      "disciplina": "Educação Física",
+      "professor": "Fernanda Sousa",
+      "cargaHoraria": 36.5
+    },
+    {
+      "id": 9,
+      "disciplina": "Artes",
+      "professor": "Gabriel Oliveira",
+      "cargaHoraria": 41.0
+    },
+    {
+      "id": 10,
+      "disciplina": "Inglês",
+      "professor": "Camila Almeida",
+      "cargaHoraria": 37.5
+    }
+  ]
+}

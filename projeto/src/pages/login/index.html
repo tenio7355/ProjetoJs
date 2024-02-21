@@ -7,21 +7,20 @@
     <title>Projeto Ifro</title>
     <link href="../../style/output.css" rel="stylesheet">
 </head>
-
 <body class="h-screen w-screen">
     <div class="flex flex-col items-center mt-40 gap-2">
         <h1 class="text-3xl font-medium">Projeto Ifro</h1>
-        <form class="flex flex-col items-center border px-10 py-4 gap-6 rounded-md">
+        <form id="form-login" class="flex flex-col items-center gap-3 text-lg card w-full max-w-[25rem]">
             <h2 class="text-xl font-medium">Login</h2>
-            <div class="flex flex-col">
-                <label for="">cpf</label>
-                <input type="text" class="border">
+            <div class="flex flex-col w-full">
+                <label class="label text-lg">cpf</label>
+                <input id="cpf-input" type="text" class="input">
             </div>
-            <div class="flex flex-col">
-                <label for="">senha</label>
-                <input type="text" class="border">
+            <div class="flex flex-col w-full">
+                <label class="label text-lg">senha</label>
+                <input id="password-input" type="text" class="input">
             </div>
-            <button type="submit" class="btn btn-default">Entrar</button>
+            <button type="submit" class="btn btn-default w-full">Entrar</button>
         </form>
     </div>
 </body>
