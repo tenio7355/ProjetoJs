@@ -11,7 +11,7 @@
   }
 
   .card{
-    @apply rounded-xl border bg-card text-card-foreground shadow px-12 py-5
+    @apply rounded-xl border bg-card text-card-foreground shadow px-12 py-5 
   }
 
   .label{
