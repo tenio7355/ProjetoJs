@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCR-Sistema Contra Reunião</title>
     <link href="../../style/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body class="h-screen w-screen 	font-style:montserrat">
     <div class="flex flex-col items-center mt-60 gap-2">
@@ -16,16 +17,16 @@
             <h2 class="text-xl font-medium"></h2>
             <div class="flex flex-col w-full">
                 <label class="label text-lg font-style:Italic ">CPF</label>
-                <input id="cpf-input" type="text" class="input bg-white">
+                <input id="cpf-input" type="text" class="input bg-white" value="pedro.costa@example.com">
             </div>
             <div class="flex flex-col w-full">
                 <label class="label text-lg font-style:Italic">Senha</label>
-                <input id="password-input" type="text" class="input bg-white">
+                <input id="password-input" type="text" class="input bg-white" value="senhadef">
             </div>
             <button type="submit" class="btn btn-default w-full bg-green-700  hover:bg-green-600 font-style: montserrat">Entrar</button>
         </form>
     </div>
 </body>
-<script type="module" src="../../../dist/js/teste.js"></script>
+<script type="module" src="../../../dist/js/pages/login/index.js"></script>
 
 </html>
