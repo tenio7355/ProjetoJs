@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Ifro</title>
+    <title>SCR-Sistema Contra Reunião</title>
     <link href="../../style/output.css" rel="stylesheet">
 </head>
-<body class="h-screen w-screen">
-    <div class="flex flex-col items-center mt-40 gap-2">
-        <h1 class="text-3xl font-medium">Projeto Ifro</h1>
-        <form id="form-login" class="flex flex-col items-center gap-3 text-lg card w-full max-w-[25rem]">
-            <h2 class="text-xl font-medium">Login</h2>
+<body class="h-screen w-screen 	font-style:montserrat">
+    <div class="flex flex-col items-center mt-60 gap-2">
+        <div class="flex card bg-green-600  w-[25rem]">
+            <h1 class="flex text-2xl font-medium font-style:montserrat w-full justify-center text-white">Sistema Contra Reunião</h1>
+        </div>
+        <form id="form-login" class="flex flex-col items-center gap-3 text-lg card w-full max-w-[25rem] bg-green-400">
+            <h2 class="text-xl font-medium"></h2>
             <div class="flex flex-col w-full">
-                <label class="label text-lg">cpf</label>
-                <input id="cpf-input" type="text" class="input">
+                <label class="label text-lg font-style:Italic ">CPF</label>
+                <input id="cpf-input" type="text" class="input bg-white">
             </div>
             <div class="flex flex-col w-full">
-                <label class="label text-lg">senha</label>
-                <input id="password-input" type="text" class="input">
+                <label class="label text-lg font-style:Italic">Senha</label>
+                <input id="password-input" type="text" class="input bg-white">
             </div>
-            <button type="submit" class="btn btn-default w-full">Entrar</button>
+            <button type="submit" class="btn btn-default w-full bg-green-700  hover:bg-green-600 font-style: montserrat">Entrar</button>
         </form>
     </div>
 </body>
