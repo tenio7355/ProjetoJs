@@ -127,7 +127,7 @@
       "idProfessor": [
         "1"
       ],
-      "periodCourse": "2024/1",
+      "periodClass": "2024/1",
       "discipline": "Programação Web",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
@@ -139,7 +139,7 @@
       "idProfessor": [
         "2"
       ],
-      "periodCourse": "2024/1",
+      "periodClass": "2024/1",
       "discipline": "Redes de Computadores",
       "nameCourse": "Informática",
       "typeCourse": "Gradução",
@@ -151,7 +151,7 @@
       "idProfessor": [
         "3"
       ],
-      "periodCourse": "2024/1",
+      "periodClass": "2024/1",
       "discipline": "Banco de Dados",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
@@ -163,7 +163,7 @@
       "idProfessor": [
         "4"
       ],
-      "periodCourse": "2024/1",
+      "periodClass": "2024/1",
       "discipline": "Lógica de Programação",
       "nameCourse": "Informática",
       "typeCourse": "Técnico",
@@ -175,7 +175,7 @@
       "idProfessor": [
         "5"
       ],
-      "periodCourse": "2024/1",
+      "periodClass": "2024/1",
       "discipline": "Segurança da Informação",
       "nameCourse": "Msi",
       "typeCourse": "Gradução",
@@ -187,7 +187,7 @@
       "idProfessor": [
         "6"
       ],
-      "periodCourse": "2024/2",
+      "periodClass": "2024/2",
       "discipline": "Desenvolvimento de Programação Web",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
@@ -199,7 +199,7 @@
       "idProfessor": [
         "7"
       ],
-      "periodCourse": "2024/2",
+      "periodClass": "2024/2",
       "discipline": "Organização de Computadores",
       "nameCourse": "Informática",
       "typeCourse": "Gradução",
@@ -211,7 +211,7 @@
       "idProfessor": [
         "8"
       ],
-      "periodCourse": "2024/2",
+      "periodClass": "2024/2",
       "discipline": "Sistemas Operacionais",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
@@ -223,7 +223,7 @@
       "idProfessor": [
         "9"
       ],
-      "periodCourse": "2024/2",
+      "periodClass": "2024/2",
       "discipline": "Informática Básica",
       "nameCourse": "Informática",
       "typeCourse": "Técnico",
@@ -235,7 +235,7 @@
       "idProfessor": [
         "10"
       ],
-      "periodCourse": "2024/2",
+      "periodClass": "2024/2",
       "discipline": "Programação Orientada a Objetos",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",

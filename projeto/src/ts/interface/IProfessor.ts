@@ -2,14 +2,17 @@ import shift from "../types/shifts";
 import specialization from "../types/specialization";
 
 interface IProfessor{
-  id: 1,
+  id: string,
+  cpf: string,
   name: string,
   email: string,
-  senha: string,
-  especializacao: specialization,
-  preferenciaHorario: shift,
-  turmasAnteriores: string[],
-  cargaHoraria: number
+  password: string,
+  isCoodinator: boolean
+  specialization: specialization,
+  shiftPreference: shift,
+  previousClasses: string[],
+  workLoad: number,
+  isLoggedIn: boolean
 }
 
 export default IProfessor

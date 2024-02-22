@@ -1,0 +1,1 @@
+type disciplines = "Banco de Dados" | "Lógica de Programação" | "Programação Web" | "Desenvolvimento de Programação Web" | "Organização de Computadores" | "Segurança da Informação" | "Sistemas Operacionais" | "Informática Básica" | "Redes de Computadores" | "Programação Orientada a Objetos"

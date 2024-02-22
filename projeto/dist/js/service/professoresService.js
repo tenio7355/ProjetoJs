@@ -5,14 +5,14 @@ export async function getProfessorApi(idProfessor) {
     return response.data;
 }
 export async function getAllProfessorsApi() {
-    const response = await (await fetch(`${endpoint}/`)).json();
+    const response = await (await fetch(`${endpoint}`)).json();
     return response;
 }
 export async function postProfessorApi(data) {
-    const result = await fetch(`${endpoint}/`, {
-        method: 'POST',
+    const result = await fetch(`${endpoint}/${data.id}`, {
+        method: 'PUT',
         headers: applicationJson,
-        body: JSON.stringify(data)
+        body: JSON.stringify(data.informations())
     });
     console.log("🚀 ~ postProfessorApi ~ result:", result);
 }

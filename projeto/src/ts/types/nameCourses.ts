@@ -1,0 +1,1 @@
+type nameCourses = "Ads" | "Informática" | "Msi" | "Engenharia Civíl" | "Informática A" | "Informática B"
