@@ -793,8 +793,20 @@ video {
   margin-top: 5rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .mt-60 {
   margin-top: 15rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .flex {
@@ -807,6 +819,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-1 {
+  height: 0.25rem;
 }
 
 .h-12 {
@@ -826,16 +842,60 @@ video {
   height: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
 
-.w-12 {
-  width: 3rem;
+.h-0 {
+  height: 0px;
 }
 
-.w-\[25rem\] {
-  width: 25rem;
+.h-\[\] {
+  height: ;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
+}
+
+.h-\[15px\] {
+  height: 15px;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-\[30rem\] {
@@ -854,6 +914,18 @@ video {
   width: 100vw;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .max-w-\[25rem\] {
   max-width: 25rem;
 }
@@ -866,6 +938,10 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -876,6 +952,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-10 {
@@ -892,6 +972,18 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-8 {
@@ -919,8 +1011,29 @@ video {
   align-self: flex-start;
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .border-2 {
@@ -933,6 +1046,14 @@ video {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
 }
 
 .border-black {
@@ -949,19 +1070,34 @@ video {
   border-bottom-color: rgb(34 197 94 / var(--tw-border-opacity));
 }
 
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+.border-r-green-500 {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(34 197 94 / var(--tw-border-opacity));
 }
 
-.bg-green-600 {
+.border-r-green-700 {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(21 128 61 / var(--tw-border-opacity));
+}
+
+.border-b-green-700 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(21 128 61 / var(--tw-border-opacity));
+}
+
+.bg-green-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 .bg-green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+.bg-lime-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 46 5 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -972,6 +1108,10 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -1011,9 +1151,9 @@ video {
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-red-500 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .filter {
@@ -1028,6 +1168,11 @@ video {
 .hover\:text-green-600:hover {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -1063,4 +1208,9 @@ video {
 .dark\:hover\:text-green-600:hover:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.dark\:hover\:text-green-700:hover:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
 }

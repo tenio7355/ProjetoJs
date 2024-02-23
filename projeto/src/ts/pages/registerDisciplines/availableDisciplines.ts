@@ -15,7 +15,7 @@ allDisciplines.forEach(discipline=> {
   ulDiscipline.innerHTML += ` 
   <li class="flex flex-col card space-y-3 justify-between">
     <div>
-      <div class="flex  justify-between">
+      <div class="flex  justify-between ">
         <h2 class="text-xl font-semibold">${discipline.nameCourse} - ${discipline.typeCourse} (${discipline.periodCourse})</h2> 
         <p class="h-fit text-sm font-medium badge badge-outline">${discipline.timePeriod}</p> 
       </div>
