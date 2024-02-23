@@ -4,10 +4,13 @@
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1  disabled:pointer-events-none disabled:opacity-50
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 px-4 py-2 disabled:pointer-events-none disabled:opacity-50
   }
   .btn-default{
-    @apply bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2
+    @apply bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 
+  }
+  .btn-outline{
+    @apply border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground
   }
   .btn-destructive{
     @apply bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90
@@ -26,7 +29,7 @@
   }
 
   .badge{
-    @apply inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
+    @apply inline-flex items-center rounded-md border px-2.5 py-1.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2
   }
   .badge-default{
     @apply border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80
@@ -41,6 +44,23 @@
   .dialog-content{
     @apply fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 sm:rounded-lg
   } 
+
+
+  .toast-overlay{
+    @apply fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[480px]
+  }
+  .toast{
+    @apply pointer-events-auto relative flex w-full items-center justify-between space-x-2 overflow-hidden rounded-md border p-4 pr-6 shadow-lg transition-all
+  }
+  .toast-default{
+    @apply border bg-background text-foreground
+  }
+  .toast-destructive{
+    @apply border-destructive bg-destructive text-destructive-foreground
+  }
+  .toast-accept{
+    @apply border-success bg-success 
+  }
 }
 
 @layer base {
@@ -71,7 +91,10 @@
  
     --accent: 220 14.3% 95.9%;
     --accent-foreground: 220.9 39.3% 11%;
- 
+    
+    --success: #54c458;
+    --success-foreground: #54c458;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
 

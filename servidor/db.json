@@ -9,7 +9,7 @@
       "isCoodinator": false,
       "specialization": "Programação",
       "shiftPreference": "Tarde",
-      "workLoad": 20.5,
+      "workLoad": 5,
       "isLoggedIn": false
     },
     {
@@ -21,7 +21,7 @@
       "isCoodinator": true,
       "specialization": "Segurança",
       "shiftPreference": "Manhã",
-      "workLoad": 15,
+      "workLoad": 8,
       "isLoggedIn": false
     },
     {
@@ -33,7 +33,7 @@
       "isCoodinator": false,
       "specialization": "Banco de Dados",
       "shiftPreference": "Tarde",
-      "workLoad": 18,
+      "workLoad": 10,
       "isLoggedIn": false
     },
     {
@@ -45,7 +45,7 @@
       "isCoodinator": false,
       "specialization": "Informática",
       "shiftPreference": "Manhã",
-      "workLoad": 22.5,
+      "workLoad": 13,
       "isLoggedIn": false
     },
     {
@@ -57,7 +57,7 @@
       "isCoodinator": false,
       "specialization": "Programação",
       "shiftPreference": "Noite",
-      "workLoad": 14,
+      "workLoad": 12,
       "isLoggedIn": true
     },
     {
@@ -69,7 +69,7 @@
       "isCoodinator": false,
       "specialization": "Sistemas Operacionais",
       "shiftPreference": "Tarde",
-      "workLoad": 19.5,
+      "workLoad": 14,
       "isLoggedIn": false
     },
     {
@@ -81,7 +81,7 @@
       "isCoodinator": true,
       "specialization": "Redes",
       "shiftPreference": "Noite",
-      "workLoad": 16,
+      "workLoad": 3,
       "isLoggedIn": false
     },
     {
@@ -93,7 +93,7 @@
       "isCoodinator": false,
       "specialization": "Informática",
       "shiftPreference": "Manhã",
-      "workLoad": 21,
+      "workLoad": 2,
       "isLoggedIn": false
     },
     {
@@ -105,7 +105,7 @@
       "isCoodinator": false,
       "specialization": "Banco de Dados",
       "shiftPreference": "Integral",
-      "workLoad": 24,
+      "workLoad": 0,
       "isLoggedIn": true
     },
     {
@@ -117,7 +117,7 @@
       "isCoodinator": false,
       "specialization": "Banco de Dados",
       "shiftPreference": "Noite",
-      "workLoad": 20,
+      "workLoad": 12,
       "isLoggedIn": true
     }
   ],
@@ -139,7 +139,7 @@
     {
       "id": "2",
       "idProfessor": [
-        "2"
+        "5"
       ],
       "nameCourse": "Informática",
       "typeCourse": "Gradução",
@@ -151,7 +151,8 @@
     {
       "id": "3",
       "idProfessor": [
-        "3"
+        "3",
+        "5"
       ],
       "nameCourse": "Ads",
       "typeCourse": "Gradução",

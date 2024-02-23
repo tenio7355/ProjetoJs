@@ -4,6 +4,22 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts}"],
   theme: {
     extend: {
+      keyframes: {
+        slideInBottom: {
+          "0%": {
+            transform: "translateY(100px)",
+            opacity: "0"
+          },
+          "100%": {
+            transform: "translateY(0px)",
+            opacity: "1"
+          },
+        }
+      },
+      animation: {
+        "in": "slideInBottom 0.3s ease-in-out both",
+        "out": "slideInBottom 0.3s ease-in-out reverse both"
+      },
       colors: {
         cor: {
           primaria: "var(--primaria)",
@@ -27,6 +43,10 @@ module.exports = {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        success: {
+          DEFAULT: "var(--success)",
+          foreground: "var(--success-foreground)",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",

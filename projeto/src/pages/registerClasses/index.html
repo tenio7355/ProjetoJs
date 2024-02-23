@@ -9,6 +9,7 @@
 </head>
 
 <body class="h-screen">
+  <script type="module" src="../../../dist/js/utils/verifyLogin.js"></script>
   <header>
     <div class="mx-auto border-b-2 max-w-8xl border-b-green-500">
       <div class="py-4 mx-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 lg:mx-0">
@@ -23,11 +24,11 @@
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
-                    href="../registerClasses/index.html">Inscrever</a>
+                    href="/projeto/src/pages/registerClasses/index.html">Inscrever</a>
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
-                    href="/projeto/src/pages/registerClasses/index.html">Aulas Inscritas</a>
+                    href="/projeto/src/pages/home/index.html">Aulas Inscritas</a>
                 </li>
               </ul>
             </nav>
@@ -55,28 +56,46 @@
       </div>
     </div>
   </header>
-  <section class="flex justify-center w-full gap-10 mt-20">
-  <section class="flex w-full justify-center gap-10 mt-20">
-    <div id="dialog-overlay" class="dialog-overlay">
+  <section class="flex flex-col w-full items-center gap-10 py-14">
+    <div id="toast-overlay" class="toast-overlay">
+      <div data-state="closed" id="toast-content" class="toast">
+
+      </div>
+    </div>
+    <div id="dialog-overlay" class="dialog-overlay hidden">
       <div id="dialog-content" class="dialog-content">
-        <div>
-          <h1>Professor Existente!</h1>
-          <p>Já existe um professor inscrito nessa disciplina.</p>
-        </div>
-        <div>
-          <button id="giveUp-discipline"class="btn btn-default">Ceder Vaga</button>
-          <button id="apply-for-discipline" class="btn btn-default">Concorrer à Vaga</button>
-        </div>
+
       </div>
     </div>
     <div>
-      <object data="components/asideProfile.html" type="text/html" class="w-[30rem] h-[20rem]"></object>
+      <select id="" class="input w-40">
+        <option class="" value=""></option>
+      </select>
     </div>
-    <div class="flex flex-col items-center">
-      <object data="components/availableDisciplines.html" type="text/html" class=" w-[60rem] h-[40rem]"></object>
+    <div class="flex gap-10">
+      <div>
+        <object data="components/asideProfile.html" type="text/html" class="w-[26rem] h-[20rem]"></object>
+      </div>
+      <ul id="ulDiscipline" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+        <!-- <li class="flex flex-col card space-y-3 justify-between">
+            <div>
+              <div class="flex  justify-between">
+                <h2 class="text-xl font-semibold">Ads - Técnico (1P)</h2> 
+                <p class="font-medium badge badge-outline">Noturno</p> 
+              </div>
+              <p>Organização de Computadores - 6h semanais</p>
+              </div>
+              <div class="flex items-center">
+                <button id="0" class="btn btn-default self-start">Inscrever-se</button>
+                <button id="unsubscribe-0" class="btn btn-default self-start hidden">Desincrever-se</button>
+              </div>
+            </li> -->
+      </ul>
     </div>
+
   </section>
 </body>
 <script type="module" src="/projeto/dist/js/pages/registerDisciplines/index.js"></script>
+<script type="module" src="/projeto/dist/js/pages/registerDisciplines/availableDisciplines.js"></script>
 
 </html>

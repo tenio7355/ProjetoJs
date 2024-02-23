@@ -10,7 +10,8 @@ const userDisciplines = document.getElementById("user-disciplines");
 inicialUserName.innerText = professor.name[0];
 userName.innerText = professor.name;
 userSpecialization.innerText = professor.specialization;
-userWorkLoad.innerText = `${professor.workLoad.toString()}h de 40h semanais`;
+const wordLoadLimit = professor.isCoodinator ? 10 : 14;
+userWorkLoad.innerText = `${professor.workLoad.toString()}h de ${wordLoadLimit}h semanais`;
 innerTextDiscipline(professor.id);
 function innerTextDiscipline(idProfessor) {
     const disciplinesFinded = allDisciplines.filter(disciplines => disciplines.idProfessor.includes(idProfessor));
