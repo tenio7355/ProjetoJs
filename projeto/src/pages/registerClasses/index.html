@@ -56,14 +56,26 @@
     </div>
   </header>
   <section class="flex w-full justify-center gap-10 mt-20">
+    <div id="dialog-overlay" class="dialog-overlay">
+      <div id="dialog-content" class="dialog-content">
+        <div>
+          <h1>Professor Existente!</h1>
+          <p>Já existe um professor inscrito nessa disciplina.</p>
+        </div>
+        <div>
+          <button id="giveUp-discipline"class="btn btn-default">Ceder Vaga</button>
+          <button id="apply-for-discipline" class="btn btn-default">Concorrer à Vaga</button>
+        </div>
+      </div>
+    </div>
     <div>
       <object data="components/asideProfile.html" type="text/html" class="w-[30rem] h-[20rem]"></object>
     </div>
     <div class="flex flex-col items-center">
-      <object data="components/availableDisciplines.html" type="text/html"
-        class=" w-[60rem] h-[40rem]"></object>
+      <object data="components/availableDisciplines.html" type="text/html" class=" w-[60rem] h-[40rem]"></object>
     </div>
   </section>
 </body>
+<script type="module" src="/projeto/dist/js/pages/registerDisciplines/index.js"></script>
 
 </html>

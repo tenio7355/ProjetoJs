@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link href="../../../style/output.css" rel="stylesheet">
 </head>
 
@@ -14,20 +13,25 @@
     <div class="space-y-3">
       <div class="flex items-center gap-3">
         <div class="flex items-center justify-center border-2 border-black rounded-full w-12 h-12">
-          <h2 class="font-semibold text-2xl">G</h2>
+          <h2 id="inicial-name-user" class="font-semibold text-2xl"></h2>
         </div>
         <div class="flex flex-col">
-          <p class="text-lg font-medium">Guilherme Mota</p>
-          <p>Informática</p>
+          <p id="user-name" class="text-lg font-medium"></p>
+          <p id="user-specialization"></p>
         </div>
       </div>
       <div>
-        
-        <p><span class="font-medium">Carga Horária:</span> 10h de 40h semanais</p>
-        <p><span class="font-medium">Cursos Inscritos:</span> Nenhum</p>
+        <div>
+          <p class="font-medium">Carga Horária:</p>
+          <p id="user-workLoad"></p>
+        </div>
+        <div>
+          <p class="font-medium">Cursos Inscritos:</p>
+          <p id="user-disciplines"></p>
+        </div>
       </div>
     </div>
   </div>
 </body>
-
+<script type="module" src="/projeto/dist/js/pages/registerDisciplines/asideProfile.js"></script>
 </html>

@@ -1,7 +1,7 @@
 import Professor from "../classes/Professor.js"
 import IProfessor from "../interface/IProfessor.js"
 
-const endpoint = "http://localhost:3000/professor"
+const endpoint = "http://localhost:3000/professores"
 const applicationJson = { 'Content-Type': 'application/json' }
 
 export async function getProfessorApi(idProfessor: number) {
@@ -13,11 +13,10 @@ export async function getAllProfessorsApi() {
   return response as IProfessor[]
 }
 
-export async function postProfessorApi(data: Professor) {
+export async function putProfessorApi(data: Professor) {
   const result = await fetch(`${endpoint}/${data.id}`, {
     method: 'PUT',
     headers: applicationJson,
     body: JSON.stringify(data.informations())
   })
-  console.log("🚀 ~ postProfessorApi ~ result:", result)
 }

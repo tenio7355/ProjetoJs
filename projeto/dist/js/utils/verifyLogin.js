@@ -1,6 +1,6 @@
 import { getAllProfessor } from "../controller/professor/getProfessor.js";
-import { getLocalStorageUser } from "./localStorageService.js";
-const idUser = getLocalStorageUser();
+import { getLocalStorageProfessor } from "./localStorageService.js";
+const idUser = getLocalStorageProfessor();
 const allProfessors = await getAllProfessor();
 if (idUser) {
     const userFinded = allProfessors.find(professor => professor.id === idUser);

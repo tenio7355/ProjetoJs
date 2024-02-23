@@ -1,7 +1,7 @@
 import { getAllProfessor } from "../controller/professor/getProfessor.js";
-import { getLocalStorageUser } from "./localStorageService.js";
+import { getLocalStorageProfessor } from "./localStorageService.js";
 
-const idUser = getLocalStorageUser()
+const idUser = getLocalStorageProfessor()
 const allProfessors = await getAllProfessor() 
 
 if(idUser){

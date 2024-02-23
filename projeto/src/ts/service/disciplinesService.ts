@@ -1,3 +1,4 @@
+import Discipline from "../classes/Discipline.js"
 import IDiscipline from "../interface/IDiscipline.js"
 
 const endpoint = "http://localhost:3000/disciplinas"
@@ -12,11 +13,11 @@ export async function getAllDisciplinesApi() {
   return response as IDiscipline[]
 }
 
-// export async function postProfessorApi(data: Professor) {
-//   const result = await fetch(`${endpoint}/${data.id}`, {
-//     method: 'PUT',
-//     headers: applicationJson,
-//     body: JSON.stringify(data.informations())
-//   })
-//   console.log("🚀 ~ postProfessorApi ~ result:", result)
-// }
+export async function putDisciplineApi(data: Discipline) {
+  const result = await fetch(`${endpoint}/${data.id}`, {
+    method: 'PUT',
+    headers: applicationJson,
+    body: JSON.stringify(data.informations())
+  })
+}
+

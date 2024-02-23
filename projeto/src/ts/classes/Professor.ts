@@ -29,17 +29,21 @@ export default class Professor implements IProfessor {
     this._isCoodinator = isCoodinator
   }
 
-  informations(){
-    return {
-      cpf: this.cpf,
-      email: this.email,
+  informations() {
+    const teste = {
       id: this.id,
-      isLoggedIn: this.isLoggedIn,
+      cpf: this.cpf,
       name: this.name,
+      email: this.email,
       password: this.password,
+      isCoodinator: this.isCoodinator,
       previousClasses: this.previousClasses,
-      shiftPreference: this.shiftPreference
+      specialization: this.specialization,
+      shiftPreference: this.shiftPreference,
+      workLoad: this.workLoad,
+      isLoggedIn: this.isLoggedIn
     } as IProfessor
+    return teste
   }
 
   public get name(): string {

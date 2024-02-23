@@ -1,7 +1,7 @@
 import Professor from "../../classes/Professor.js";
 import { getAllProfessor } from "../../controller/professor/getProfessor.js";
-import { postProfessor } from "../../controller/professor/postProfessor.js";
-import { setLocalStorageUser } from "../../utils/localStorageService.js";
+import { putProfessor } from "../../controller/professor/putProfessor.js";
+import { setLocalStorageProfessor } from "../../utils/localStorageService.js";
 const allProfessors = await getAllProfessor();
 const cpfInput = document.getElementById("cpf-input");
 const passwordInput = document.getElementById("password-input");
@@ -15,8 +15,8 @@ formLogin.addEventListener("submit", async (event) => {
             if (passwordMatched) {
                 const professor = new Professor(findedEmail);
                 professor.isLoggedIn = true;
-                setLocalStorageUser(professor.id);
-                await postProfessor(professor);
+                setLocalStorageProfessor(professor.id);
+                await putProfessor(professor);
                 window.location.href = "../home";
             }
             else {

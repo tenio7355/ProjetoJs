@@ -8,11 +8,10 @@ export async function getAllDisciplinesApi() {
     const response = await (await fetch(`${endpoint}`)).json();
     return response;
 }
-// export async function postProfessorApi(data: Professor) {
-//   const result = await fetch(`${endpoint}/${data.id}`, {
-//     method: 'PUT',
-//     headers: applicationJson,
-//     body: JSON.stringify(data.informations())
-//   })
-//   console.log("🚀 ~ postProfessorApi ~ result:", result)
-// }
+export async function putDisciplineApi(data) {
+    const result = await fetch(`${endpoint}/${data.id}`, {
+        method: 'PUT',
+        headers: applicationJson,
+        body: JSON.stringify(data.informations())
+    });
+}

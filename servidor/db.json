@@ -21,7 +21,7 @@
       "isCoodinator": true,
       "specialization": "Segurança",
       "shiftPreference": "Manhã",
-      "workLoad": 15.0,
+      "workLoad": 15,
       "isLoggedIn": false
     },
     {
@@ -33,7 +33,7 @@
       "isCoodinator": false,
       "specialization": "Banco de Dados",
       "shiftPreference": "Tarde",
-      "workLoad": 18.0,
+      "workLoad": 18,
       "isLoggedIn": false
     },
     {
@@ -55,10 +55,10 @@
       "email": "pedro.costa@example.com",
       "password": "senhadef",
       "isCoodinator": false,
-      "specialization": "Redes",
+      "specialization": "Programação",
       "shiftPreference": "Noite",
-      "workLoad": 17.0,
-      "isLoggedIn": false
+      "workLoad": 14,
+      "isLoggedIn": true
     },
     {
       "id": "6",
@@ -81,7 +81,7 @@
       "isCoodinator": true,
       "specialization": "Redes",
       "shiftPreference": "Noite",
-      "workLoad": 16.0,
+      "workLoad": 16,
       "isLoggedIn": false
     },
     {
@@ -93,7 +93,7 @@
       "isCoodinator": false,
       "specialization": "Informática",
       "shiftPreference": "Manhã",
-      "workLoad": 21.0,
+      "workLoad": 21,
       "isLoggedIn": false
     },
     {
@@ -105,8 +105,8 @@
       "isCoodinator": false,
       "specialization": "Banco de Dados",
       "shiftPreference": "Integral",
-      "workLoad": 24.0,
-      "isLoggedIn": false
+      "workLoad": 24,
+      "isLoggedIn": true
     },
     {
       "id": "10",
@@ -115,22 +115,24 @@
       "email": "mateus.oliveira@example.com",
       "password": "senhauvw",
       "isCoodinator": false,
-      "specialization": "Programação",
+      "specialization": "Banco de Dados",
       "shiftPreference": "Noite",
-      "workLoad": 18.5,
-      "isLoggedIn": false
+      "workLoad": 20,
+      "isLoggedIn": true
     }
   ],
   "disciplinas": [
     {
       "id": "1",
       "idProfessor": [
-        "1"
+        "1",
+        "9",
+        "5"
       ],
-      "periodCourse": "2024/1",
-      "discipline": "Programação Web",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Programação Web",
       "timePeriod": "Vespertino",
       "workLoad": 4
     },
@@ -139,10 +141,10 @@
       "idProfessor": [
         "2"
       ],
-      "periodCourse": "2024/1",
-      "discipline": "Redes de Computadores",
       "nameCourse": "Informática",
       "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Redes de Computadores",
       "timePeriod": "Noturno",
       "workLoad": 4
     },
@@ -151,10 +153,10 @@
       "idProfessor": [
         "3"
       ],
-      "periodCourse": "2024/1",
-      "discipline": "Banco de Dados",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Banco de Dados",
       "timePeriod": "Matutino",
       "workLoad": 4
     },
@@ -163,18 +165,16 @@
       "idProfessor": [
         "4"
       ],
-      "periodCourse": "2024/1",
-      "discipline": "Lógica de Programação",
       "nameCourse": "Informática",
       "typeCourse": "Técnico",
+      "periodCourse": "2024/1",
+      "discipline": "Lógica de Programação",
       "timePeriod": "Matutino",
       "workLoad": 4
     },
     {
       "id": "5",
-      "idProfessor": [
-        "5"
-      ],
+      "idProfessor": [],
       "periodCourse": "2024/1",
       "discipline": "Segurança da Informação",
       "nameCourse": "Msi",
@@ -220,13 +220,11 @@
     },
     {
       "id": "9",
-      "idProfessor": [
-        "9"
-      ],
-      "periodCourse": "2024/2",
-      "discipline": "Informática Básica",
+      "idProfessor": [],
       "nameCourse": "Informática",
       "typeCourse": "Técnico",
+      "periodCourse": "2024/2",
+      "discipline": "Informática Básica",
       "timePeriod": "Vespertino",
       "workLoad": 4
     },
