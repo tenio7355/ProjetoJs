@@ -1,7 +1,5 @@
 import IDiscipline from "../interface/IDiscipline";
-import IProfessor from "../interface/IProfessor";
 import periodCourse from "../types/periodClasses";
-import shift from "../types/shifts";
 import specialization from "../types/specialization";
 import timePeriod from "../types/timePeriod";
 import typeCourses from "../types/typeCourses";
@@ -15,10 +13,9 @@ export default class Discipline implements IDiscipline {
   private _discipline: disciplines;
   private _timePeriod: timePeriod;
   private _workLoad: number;
+  private _specialization: specialization;
 
-
-
-  constructor({ id, idProfessor, nameCourse, typeCourse, periodCourse, discipline, timePeriod, workLoad }: IDiscipline) {
+  constructor({ id, idProfessor, nameCourse, typeCourse, periodCourse, discipline, timePeriod, workLoad, specialization }: IDiscipline) {
     this._id = id
     this._idProfessor = idProfessor
     this._nameCourse = nameCourse
@@ -27,8 +24,8 @@ export default class Discipline implements IDiscipline {
     this._discipline = discipline
     this._timePeriod = timePeriod
     this._workLoad = workLoad
+    this._specialization = specialization
   }
-
 
   informations() {
     const teste = {
@@ -39,7 +36,8 @@ export default class Discipline implements IDiscipline {
       periodCourse: this.periodCourse,
       discipline: this.discipline,
       timePeriod: this.timePeriod,
-      workLoad: this.workLoad
+      workLoad: this.workLoad,
+      specialization: this.specialization
     } as IDiscipline
     return teste
   }
@@ -68,10 +66,10 @@ export default class Discipline implements IDiscipline {
   public get workLoad(): number {
     return this._workLoad;
   }
-
-  public set id(value: string) {
-    this._id = value;
+  public get specialization(): specialization {
+    return this._specialization;
   }
+
   public set idProfessor(value: string[]) {
     this._idProfessor = value;
   }
@@ -92,5 +90,8 @@ export default class Discipline implements IDiscipline {
   }
   public set workLoad(value: number) {
     this._workLoad = value;
+  }
+  public set specialization(value: specialization) {
+    this._specialization = value;
   }
 }

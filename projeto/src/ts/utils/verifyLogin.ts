@@ -7,8 +7,8 @@ const allProfessors = await getAllProfessor()
 if(idUser){
   const userFinded = allProfessors.find(professor=> professor.id === idUser)!
   if(!userFinded.isLoggedIn){
-    window.location.href = "/login"
+    window.location.href = "/projeto/src/pages/login/index.html"
   }
 } else {
-  window.location.href = "/login"
+  window.location.href = "/projeto/src/pages/login/index.html"
 }

@@ -42,24 +42,25 @@
     </div>
   </header>
   <main class="flex flex-col items-center w-full mt-14 gap-4">
-    <div class="max-w-[60rem] w-full space-y-4">
-      <div class="space-y-1">
-        <div class="flex items-center gap-3">
-          <h1 class="text-2xl font-semibold">Aulas Inscritas</h1>
-          <a href="/projeto/src/pages/registerClasses/index.html" class="btn btn-default px-4">Inscrever-se</a>
+    <div class="flex flex-col items-center max-w-[60rem] w-full space-y-4">
+      <div class="space-y-4">
+        <div class="space-y-1">
+          <div class="flex items-center gap-3">
+            <h1 class="text-2xl font-semibold">Aulas Inscritas</h1>
+            <a href="/projeto/src/pages/registerClasses/index.html" class="btn btn-default px-4">Inscrever-se</a>
+          </div>
+          <div class="flex items-center gap-1">
+            <p class="font-medium">Carga horária atual:</p>
+            <p>10h de 14h semanais</p>
+          </div>
         </div>
-        <div class="flex items-center gap-1">
-          <p class="font-medium">Carga horária atual:</p>
-          <p>10h de 14h semanais</p>
-        </div>
-      </div>
-      <div id="noDisciplines" >
-        <!-- <div class="w-fit card">
+        <div id="noDisciplines">
+          <!-- <div class="w-fit card">
           <p class="text-xl text-center">Você não está inscrito em nenhuma aula!</p>
         </div> -->
-      </div>
-      <ul id="ulDiscipline" class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[50rem] gap-5">
-        <!-- <li class="flex flex-col card px-7 space-y-3 justify-between">
+        </div>
+        <ul id="ulDiscipline" class="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[50rem] gap-5">
+          <!-- <li class="flex flex-col card px-7 space-y-3 justify-between">
           <div>
             <div class="flex  justify-between">
               <h2 class="text-xl font-semibold">Ads - Técnico (1P)</h2>
@@ -68,7 +69,8 @@
             <p>Organização de Computadores - 6h semanais</p>
           </div>
         </li> -->
-      </ul>
+        </ul>
+      </div>
     </div>
   </main>
 </body>

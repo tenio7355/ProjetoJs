@@ -1,4 +1,4 @@
-const endpoint = "http://localhost:3000/professor";
+const endpoint = "http://localhost:3000/professores";
 const applicationJson = { 'Content-Type': 'application/json' };
 export async function getProfessorApi(idProfessor) {
     const response = await (await fetch(`${endpoint}/${idProfessor}`)).json();
@@ -8,11 +8,10 @@ export async function getAllProfessorsApi() {
     const response = await (await fetch(`${endpoint}`)).json();
     return response;
 }
-export async function postProfessorApi(data) {
+export async function putProfessorApi(data) {
     const result = await fetch(`${endpoint}/${data.id}`, {
         method: 'PUT',
         headers: applicationJson,
         body: JSON.stringify(data.informations())
     });
-    console.log("🚀 ~ postProfessorApi ~ result:", result);
 }

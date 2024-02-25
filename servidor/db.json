@@ -126,7 +126,6 @@
       "id": "1",
       "idProfessor": [
         "1",
-        "9",
         "5"
       ],
       "nameCourse": "Ads",
@@ -134,11 +133,14 @@
       "periodCourse": "2024/1",
       "discipline": "Programação Web",
       "timePeriod": "Vespertino",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Programação"
     },
     {
       "id": "2",
       "idProfessor": [
+        "2",
+        "5",
         "5"
       ],
       "nameCourse": "Informática",
@@ -146,66 +148,73 @@
       "periodCourse": "2024/1",
       "discipline": "Redes de Computadores",
       "timePeriod": "Noturno",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Redes"
     },
     {
       "id": "3",
       "idProfessor": [
-        "3",
-        "5"
+        "3"
       ],
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
       "periodCourse": "2024/1",
       "discipline": "Banco de Dados",
       "timePeriod": "Matutino",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Banco de Dados"
     },
     {
       "id": "4",
       "idProfessor": [
         "4"
       ],
-      "nameCourse": "Informática",
-      "typeCourse": "Técnico",
       "periodCourse": "2024/1",
       "discipline": "Lógica de Programação",
+      "nameCourse": "Informática",
+      "typeCourse": "Técnico",
       "timePeriod": "Matutino",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Programação"
     },
     {
       "id": "5",
-      "idProfessor": [],
+      "idProfessor": [
+        "5"
+      ],
       "periodCourse": "2024/1",
       "discipline": "Segurança da Informação",
       "nameCourse": "Msi",
       "typeCourse": "Gradução",
       "timePeriod": "Noturno",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Segurança"
     },
     {
       "id": "6",
       "idProfessor": [
         "6"
       ],
-      "periodCourse": "2024/2",
-      "discipline": "Desenvolvimento de Programação Web",
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Desenvolvimento de Programação Web",
       "timePeriod": "Noturno",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Programação"
     },
     {
       "id": "7",
       "idProfessor": [
         "7"
       ],
-      "periodCourse": "2024/2",
-      "discipline": "Organização de Computadores",
       "nameCourse": "Informática",
       "typeCourse": "Gradução",
+      "periodCourse": "2024/2",
+      "discipline": "Organização de Computadores",
       "timePeriod": "Integral",
-      "workLoad": 6
+      "workLoad": 6,
+      "specialization": "Ciência da Computação"
     },
     {
       "id": "8",
@@ -217,17 +226,21 @@
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
       "timePeriod": "Matutino",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Ciência da Computação"
     },
     {
       "id": "9",
-      "idProfessor": [],
-      "nameCourse": "Informática",
-      "typeCourse": "Técnico",
+      "idProfessor": [
+        "9"
+      ],
       "periodCourse": "2024/2",
       "discipline": "Informática Básica",
+      "nameCourse": "Informática",
+      "typeCourse": "Técnico",
       "timePeriod": "Vespertino",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Informática"
     },
     {
       "id": "10",
@@ -239,7 +252,24 @@
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
       "timePeriod": "Noturno",
-      "workLoad": 4
+      "workLoad": 4,
+      "specialization": "Programação"
+    },
+    {
+      "id": "11",
+      "idProfessor": [
+        "5"
+      ],
+      "nameCourse": "Ads",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Banco de Dados",
+      "timePeriod": "Matutino",
+      "workLoad": 4,
+      "specialization": "Banco de Dados"
     }
-  ]
+  ],
+  "sistema": {
+    "isMeeting": true
+  }
 }

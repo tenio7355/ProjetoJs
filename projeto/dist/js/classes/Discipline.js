@@ -7,7 +7,8 @@ export default class Discipline {
     _discipline;
     _timePeriod;
     _workLoad;
-    constructor({ id, idProfessor, nameCourse, typeCourse, periodCourse, discipline, timePeriod, workLoad }) {
+    _specialization;
+    constructor({ id, idProfessor, nameCourse, typeCourse, periodCourse, discipline, timePeriod, workLoad, specialization }) {
         this._id = id;
         this._idProfessor = idProfessor;
         this._nameCourse = nameCourse;
@@ -16,6 +17,7 @@ export default class Discipline {
         this._discipline = discipline;
         this._timePeriod = timePeriod;
         this._workLoad = workLoad;
+        this._specialization = specialization;
     }
     informations() {
         const teste = {
@@ -26,7 +28,8 @@ export default class Discipline {
             periodCourse: this.periodCourse,
             discipline: this.discipline,
             timePeriod: this.timePeriod,
-            workLoad: this.workLoad
+            workLoad: this.workLoad,
+            specialization: this.specialization
         };
         return teste;
     }
@@ -54,8 +57,8 @@ export default class Discipline {
     get workLoad() {
         return this._workLoad;
     }
-    set id(value) {
-        this._id = value;
+    get specialization() {
+        return this._specialization;
     }
     set idProfessor(value) {
         this._idProfessor = value;
@@ -77,5 +80,8 @@ export default class Discipline {
     }
     set workLoad(value) {
         this._workLoad = value;
+    }
+    set specialization(value) {
+        this._specialization = value;
     }
 }

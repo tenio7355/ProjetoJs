@@ -56,28 +56,87 @@
       </div>
     </div>
   </header>
-  <section class="flex flex-col w-full items-center gap-10 py-14">
-    <div id="toast-overlay" class="toast-overlay">
-      <div data-state="closed" id="toast-content" class="toast">
+  <main class="flex flex-col items-center">
+    <div class="flex max-w-[80rem] w-full">
+      <section class="flex w-full gap-10 py-14">
+        <div id="toast-overlay" class="toast-overlay hidden">
+          <div data-state="closed" id="toast-content" class="toast">
 
-      </div>
-    </div>
-    <div id="dialog-overlay" class="dialog-overlay hidden">
-      <div id="dialog-content" class="dialog-content">
+          </div>
+        </div>
+        <div id="dialog-overlay" class="dialog-overlay hidden">
+          <div id="dialog-content" class="dialog-content">
 
-      </div>
-    </div>
-    <div>
-      <select id="" class="input w-40">
-        <option class="" value=""></option>
-      </select>
-    </div>
-    <div class="flex gap-10">
-      <div>
-        <object data="components/asideProfile.html" type="text/html" class="w-[26rem] h-[20rem]"></object>
-      </div>
-      <ul id="ulDiscipline" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-        <!-- <li class="flex flex-col card space-y-3 justify-between">
+          </div>
+        </div>
+        <div id="aside-profile" class="flex flex-col gap-6 max-w-[24rem] w-full">
+          <div class="card flex flex-col justify-center-center w-full gap-2">
+            <h1 class="font-medium text-2xl">Meu Perfil</h1>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 border-b pb-4">
+                <div class="flex items-center justify-center border-2 border-black rounded-full w-12 h-12">
+                  <h2 id="inicial-name-user" class="font-semibold text-2xl"></h2>
+                </div>
+                <div class="flex flex-col">
+                  <p id="user-name" class="text-lg font-medium"></p>
+                  <p id="user-specialization"></p>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <div>
+                  <p class="font-medium">Carga Horária:</p>
+                  <p id="user-workLoad"></p>
+                </div>
+                <div>
+                  <p class="font-medium">Cursos Inscritos:</p>
+                  <p id="user-disciplines"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card flex flex-col gap-3">
+            <div>
+              <label class="font-medium">Especialização</label>
+              <div id="select-specialization" class="select-trigger">
+                <p id="select-value" id="text-sl">Todos</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </div>
+              <div id="select-overlay" class="dialog-overlay bg-transparent hidden">
+              </div>
+              <div id="select-content" class="select-content p-1 hidden">
+                <!-- <div class="hover:bg-gray-100 px-3 py-2 rounded-lg">
+                  <p class="text-sm ">
+                    Banco de Dados
+                  </p>
+                </div> -->
+              </div>
+            </div>
+            <div>
+              <label class="font-medium">Turno</label>
+              <div class="flex gap-3 flex-wrap">
+                <button id="btn-timePeriod" class="btn btn-outline border-green-300 bg-green-50 hover:bg-green-100">Todos</button>
+                <button id="btn-timePeriod" class="btn btn-outline">Matutino</button> 
+                <button id="btn-timePeriod" class="btn btn-outline">Vespertino</button>
+                <button id="btn-timePeriod" class="btn btn-outline">Noturno</button>
+                <button id="btn-timePeriod" class="btn btn-outline">Integral</button>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label class="font-medium">Inscrições Recebidas</label>
+              <div class="flex justify-between">
+                <button id="filter-subscribed" class="btn btn-outline border-green-300 bg-green-50 hover:bg-green-100">Todas</button>
+                <button id="filter-subscribed" class="btn btn-outline">Nenhuma</button>
+                <button id="filter-subscribed" class="btn btn-outline">1+ Inscrições</button>
+              </div>
+            </div>
+            <button id="btn-filter" class="btn btn-default">Filtrar</button>
+          </div>
+        </div>
+        <ul id="ulDiscipline" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 h-fit w-full">
+          <!-- <li class="flex flex-col card space-y-3 justify-between">
             <div>
               <div class="flex  justify-between">
                 <h2 class="text-xl font-semibold">Ads - Técnico (1P)</h2> 
@@ -90,12 +149,14 @@
                 <button id="unsubscribe-0" class="btn btn-default self-start hidden">Desincrever-se</button>
               </div>
             </li> -->
-      </ul>
+        </ul>
+      </section>
     </div>
-
-  </section>
+  </main>
 </body>
 <script type="module" src="/projeto/dist/js/pages/registerDisciplines/index.js"></script>
 <script type="module" src="/projeto/dist/js/pages/registerDisciplines/availableDisciplines.js"></script>
+<script type="module" src="/projeto/dist/js/pages/registerDisciplines/asideProfile.js"></script>
+<script type="module" src="/projeto/dist/js/pages/registerDisciplines/filter.js"></script>
 
 </html>
