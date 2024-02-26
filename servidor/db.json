@@ -7,8 +7,13 @@
       "email": "joao.silva@example.com",
       "password": "senha123",
       "isCoodinator": false,
-      "specialization": "Programação",
-      "shiftPreference": "Tarde",
+      "specialization": [
+        "Programação"
+      ],
+      "shiftPreference": [
+        "Vespertino"
+      ],
+      "previousClasses": [],
       "workLoad": 5,
       "isLoggedIn": false
     },
@@ -19,8 +24,13 @@
       "email": "maria.oliveira@example.com",
       "password": "senha456",
       "isCoodinator": true,
-      "specialization": "Segurança",
-      "shiftPreference": "Manhã",
+      "specialization": [
+        "Segurança"
+      ],
+      "shiftPreference": [
+        "Matutino"
+      ],
+      "previousClasses": [],
       "workLoad": 8,
       "isLoggedIn": false
     },
@@ -31,8 +41,13 @@
       "email": "carlos.santos@example.com",
       "password": "senha789",
       "isCoodinator": false,
-      "specialization": "Banco de Dados",
-      "shiftPreference": "Tarde",
+      "specialization": [
+        "Banco de Dados"
+      ],
+      "shiftPreference": [
+        "Vespertino"
+      ],
+      "previousClasses": [],
       "workLoad": 10,
       "isLoggedIn": false
     },
@@ -43,8 +58,13 @@
       "email": "ana.lima@example.com",
       "password": "senhaabc",
       "isCoodinator": false,
-      "specialization": "Informática",
-      "shiftPreference": "Manhã",
+      "specialization": [
+        "Informática"
+      ],
+      "shiftPreference": [
+        "Matutino"
+      ],
+      "previousClasses": [],
       "workLoad": 13,
       "isLoggedIn": false
     },
@@ -54,9 +74,13 @@
       "name": "Pedro Costa",
       "email": "pedro.costa@example.com",
       "password": "senhadef",
-      "isCoodinator": false,
-      "specialization": "Programação",
-      "shiftPreference": "Noite",
+      "previousClasses": [],
+      "specialization": [
+        "Programação"
+      ],
+      "shiftPreference": [
+        "Noturno"
+      ],
       "workLoad": 12,
       "isLoggedIn": true
     },
@@ -67,8 +91,13 @@
       "email": "luciana.pereira@example.com",
       "password": "senhaghi",
       "isCoodinator": false,
-      "specialization": "Sistemas Operacionais",
-      "shiftPreference": "Tarde",
+      "specialization": [
+        "Sistemas Operacionais"
+      ],
+      "shiftPreference": [
+        "Vespertino"
+      ],
+      "previousClasses": [],
       "workLoad": 14,
       "isLoggedIn": false
     },
@@ -79,9 +108,14 @@
       "email": "rafaela.sousa@example.com",
       "password": "senhaklm",
       "isCoodinator": true,
-      "specialization": "Redes",
-      "shiftPreference": "Noite",
-      "workLoad": 3,
+      "specialization": [
+        "Redes"
+      ],
+      "shiftPreference": [
+        "Noturno"
+      ],
+      "previousClasses": [],
+      "workLoad": 0,
       "isLoggedIn": false
     },
     {
@@ -91,8 +125,13 @@
       "email": "gabriel.santos@example.com",
       "password": "senhaopq",
       "isCoodinator": false,
-      "specialization": "Informática",
-      "shiftPreference": "Manhã",
+      "specialization": [
+        "Informática"
+      ],
+      "shiftPreference": [
+        "Matutino"
+      ],
+      "previousClasses": [],
       "workLoad": 2,
       "isLoggedIn": false
     },
@@ -103,8 +142,13 @@
       "email": "carolina.lima@example.com",
       "password": "senharst",
       "isCoodinator": false,
-      "specialization": "Banco de Dados",
-      "shiftPreference": "Integral",
+      "specialization": [
+        "Banco de Dados"
+      ],
+      "shiftPreference": [
+        "Integral"
+      ],
+      "previousClasses": [],
       "workLoad": 0,
       "isLoggedIn": true
     },
@@ -115,8 +159,13 @@
       "email": "mateus.oliveira@example.com",
       "password": "senhauvw",
       "isCoodinator": false,
-      "specialization": "Banco de Dados",
-      "shiftPreference": "Noite",
+      "specialization": [
+        "Banco de Dados"
+      ],
+      "shiftPreference": [
+        "Noturno"
+      ],
+      "previousClasses": [],
       "workLoad": 12,
       "isLoggedIn": true
     }
@@ -126,7 +175,8 @@
       "id": "1",
       "idProfessor": [
         "1",
-        "5"
+        "5",
+        "7"
       ],
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
@@ -134,7 +184,9 @@
       "discipline": "Programação Web",
       "timePeriod": "Vespertino",
       "workLoad": 4,
-      "specialization": "Programação"
+      "specialization": [
+        "Programação"
+      ]
     },
     {
       "id": "2",
@@ -148,7 +200,9 @@
       "discipline": "Redes de Computadores",
       "timePeriod": "Noturno",
       "workLoad": 4,
-      "specialization": "Redes"
+      "specialization": [
+        "Redes"
+      ]
     },
     {
       "id": "3",
@@ -162,7 +216,9 @@
       "discipline": "Banco de Dados",
       "timePeriod": "Matutino",
       "workLoad": 4,
-      "specialization": "Banco de Dados"
+      "specialization": [
+        "Banco de Dados"
+      ]
     },
     {
       "id": "4",
@@ -175,7 +231,9 @@
       "typeCourse": "Técnico",
       "timePeriod": "Matutino",
       "workLoad": 4,
-      "specialization": "Programação"
+      "specialization": [
+        "Programação"
+      ]
     },
     {
       "id": "5",
@@ -186,7 +244,9 @@
       "discipline": "Segurança da Informação",
       "timePeriod": "Noturno",
       "workLoad": 4,
-      "specialization": "Segurança"
+      "specialization": [
+        "Segurança"
+      ]
     },
     {
       "id": "6",
@@ -199,7 +259,9 @@
       "discipline": "Desenvolvimento de Programação Web",
       "timePeriod": "Noturno",
       "workLoad": 4,
-      "specialization": "Programação"
+      "specialization": [
+        "Programação"
+      ]
     },
     {
       "id": "7",
@@ -212,7 +274,9 @@
       "discipline": "Organização de Computadores",
       "timePeriod": "Integral",
       "workLoad": 6,
-      "specialization": "Ciência da Computação"
+      "specialization": [
+        "Ciência da Computação"
+      ]
     },
     {
       "id": "8",
@@ -225,7 +289,9 @@
       "typeCourse": "Gradução",
       "timePeriod": "Matutino",
       "workLoad": 4,
-      "specialization": "Ciência da Computação"
+      "specialization": [
+        "Ciência da Computação"
+      ]
     },
     {
       "id": "9",
@@ -238,7 +304,9 @@
       "typeCourse": "Técnico",
       "timePeriod": "Vespertino",
       "workLoad": 4,
-      "specialization": "Informática"
+      "specialization": [
+        "Informática"
+      ]
     },
     {
       "id": "10",
@@ -251,7 +319,9 @@
       "typeCourse": "Gradução",
       "timePeriod": "Noturno",
       "workLoad": 4,
-      "specialization": "Programação"
+      "specialization": [
+        "Programação"
+      ]
     },
     {
       "id": "11",
@@ -262,16 +332,18 @@
       "discipline": "Banco de Dados",
       "timePeriod": "Matutino",
       "workLoad": 4,
-      "specialization": "Banco de Dados"
+      "specialization": [
+        "Banco de Dados"
+      ]
     }
   ],
   "sistema": {
     "isMeeting": true,
-    "lastDayMeeting": "2024/02/24"
+    "lastDayMeeting": "2024/02/25"
   },
   "administrador": {
     "name": "Admin Geral",
-    "email": "adminGer4l@gmail.com",
+    "email": "admingeral@gmail.com",
     "password": "senhaTop",
     "isLoggedIn": true
   }

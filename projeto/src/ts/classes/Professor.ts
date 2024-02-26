@@ -1,4 +1,5 @@
 import IProfessor from "../interface/IProfessor";
+import previousClasses from "../types/previousClasses";
 import shift from "../types/shifts";
 import specialization from "../types/specialization";
 
@@ -9,13 +10,13 @@ export default class Professor implements IProfessor {
   private _email: string;
   private _password: string;
   private _isCoodinator: boolean;
-  private _specialization: specialization;
-  private _shiftPreference: shift;
-  private _previousClasses: string[];
+  private _specialization: specialization[];
+  private _shiftPreference: shift[];
+  private _previousClasses: previousClasses[];
   private _workLoad: number;
   private _isLoggedIn: boolean;
 
-  constructor({ id, cpf, name, email, password, specialization, shiftPreference, previousClasses, workLoad, isLoggedIn, isCoodinator }: IProfessor) {
+  constructor({ id, cpf, name, email, password, specialization, shiftPreference, previousClasses, workLoad, isLoggedIn, isCoordinator: isCoodinator }: IProfessor) {
     this._id = id
     this._cpf = cpf
     this._name = name
@@ -36,7 +37,7 @@ export default class Professor implements IProfessor {
       name: this.name,
       email: this.email,
       password: this.password,
-      isCoodinator: this.isCoodinator,
+      isCoordinator: this.isCoordinator,
       previousClasses: this.previousClasses,
       specialization: this.specialization,
       shiftPreference: this.shiftPreference,
@@ -52,13 +53,13 @@ export default class Professor implements IProfessor {
   public get password(): string {
     return this._password;
   }
-  public get specialization(): specialization {
+  public get specialization(): specialization[] {
     return this._specialization;
   }
-  public get shiftPreference(): shift {
+  public get shiftPreference(): shift[] {
     return this._shiftPreference;
   }
-  public get previousClasses(): string[] {
+  public get previousClasses(): previousClasses[] {
     return this._previousClasses;
   }
   public get workLoad(): number {
@@ -76,10 +77,10 @@ export default class Professor implements IProfessor {
   public get email(): string {
     return this._email;
   }
-  public get isCoodinator(): boolean {
+  public get isCoordinator(): boolean {
     return this._isCoodinator;
   }
-  public set isCoodinator(value: boolean) {
+  public set isCoordinator(value: boolean) {
     this._isCoodinator = value;
   }
   public set cpf(value: string) {
@@ -94,13 +95,13 @@ export default class Professor implements IProfessor {
   public set password(value: string) {
     this._password = value;
   }
-  public set specialization(value: specialization) {
+  public set specialization(value: specialization[]) {
     this._specialization = value;
   }
-  public set shiftPreference(value: shift) {
+  public set shiftPreference(value: shift[]) {
     this._shiftPreference = value;
   }
-  public set previousClasses(value: string[]) {
+  public set previousClasses(value: previousClasses[]) {
     this._previousClasses = value;
   }
   public set workLoad(value: number) {

@@ -74,7 +74,7 @@ function creatCards() {
             buttonUnsubscribe.classList.remove("hidden");
         }
         buttonSubscribe.addEventListener("click", async (event) => {
-            const wordLoadLimit = professor.isCoodinator ? 10 : 14;
+            const wordLoadLimit = professor.isCoordinator ? 10 : 14;
             const discipline = new Discipline(thisDiscipline);
             const toastOverlay = document.getElementById("toast-overlay");
             const toastContent = document.getElementById("toast-content");

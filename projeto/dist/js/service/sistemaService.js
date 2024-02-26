@@ -8,6 +8,6 @@ export async function putSystemApi(data) {
     const result = await fetch(`${endpoint}/`, {
         method: 'PUT',
         headers: applicationJson,
-        body: JSON.stringify(data)
+        body: JSON.stringify(data.informations())
     });
 }

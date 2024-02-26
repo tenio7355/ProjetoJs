@@ -9,8 +9,8 @@ const userWorkLoad = document.getElementById("user-workLoad");
 const userDisciplines = document.getElementById("user-disciplines");
 inicialUserName.innerText = professor.name[0];
 userName.innerText = professor.name;
-typeProfessor.innerText = professor.isCoodinator ? "Professor (Coordenador)" : "Professor";
-const wordLoadLimit = professor.isCoodinator ? 10 : 14;
+typeProfessor.innerText = professor.isCoordinator ? "Professor (Coordenador)" : "Professor";
+const wordLoadLimit = professor.isCoordinator ? 10 : 14;
 userWorkLoad.innerText = `${professor.workLoad.toString()}h de ${wordLoadLimit}h semanais`;
 innerTextDiscipline(professor.id);
 function innerTextDiscipline(idProfessor) {

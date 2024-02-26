@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Admin</title>
   <link href="/projeto/src/style/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
               <ul class="flex space-x-8">
                 <li>
                   <a class=" hover:text-green-600 dark:hover:text-green-600"
-                    href="/projeto/src/pages/home/index.html">Home</a>
+                    href="/projeto/src/pages/admin/home/index.html">Home</a>
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
@@ -27,7 +28,7 @@
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
-                    href="/projeto/src/pages/registerClasses/index.html">Criar Reunião</a>
+                    href="/projeto/src/pages/admin/createMeet/index.html">Criar Reunião</a>
                 </li>
               </ul>
             </nav>
@@ -46,34 +47,57 @@
       </div>
     </div>
   </header>
-  <main class="flex justify-center mt-7 w-screen">
+  <main class="flex justify-center my-7">
     <div class="flex flex-col items-center gap-4 max-w-7xl w-full">
-      <div class="max-w-[30rem] w-full">
+      <div class="flex justify-between items-center w-full">
+
         <div class="flex flex-col self-start w-full">
-          <div class="flex items-center gap-3">
-            <h1 class="font-medium text-2xl">Informações da Reunião</h1>
-            <button class="btn btn-default">Ver mais</button>
-          </div>
+          <h1 class="font-medium text-2xl">Informações da Reunião</h1>
           <div class="flex items-center gap-2">
             <h2 class="font-medium">Status:</h2>
             <div class="flex items-center gap-1">
-              <div class="p-1 bg-green-500 animate-pulse rounded-full"></div>
-              <p>Em andamento...</p>
+              <div id="meeting-status-color" class="p-1 rounded-full"></div>
+              <p id="meeting-status-text"></p>
             </div>
           </div>
         </div>
+        <button id="btn-action-meeting" class="btn">
+        </button>
       </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        6 de 10 professores votaram
-      </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        12 de 20 disciplinas foram escolhidas
-      </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        Reunião termina dia: 28/02/2024
+
+      <div class="grid grid-cols-2 gap-4 w-full">
+        <div class="flex flex-col gap-2 card px-5 py-4">
+          <h3 class="font-medium text-xl">Votações professores</h3>
+          <ul id="ul-card-professors" class="flex flex-col gap-3">
+            <!-- <li class="flex items-center justify-between px-4 py-2 border rounded-md">
+              <div>
+                <p class="font-medium">Guilherme Mota - guimota22@gmail.com</p>
+                <p>Carga horária: 2 horas de 14 horas</p>
+              </div>
+              <p class="font-medium badge badge-outline text-green-600 text-base">Votou</p>
+            </li> -->
+          </ul>
+        </div>
+        <div class="flex flex-col gap-2 card px-5 py-4">
+          <h3 class="font-medium text-xl">Disciplinas votadas</h3>
+          <ul id="ul-card-disciplines" class="flex flex-col gap-3">
+            <!-- <li class="flex items-center justify-between px-4 py-2 border rounded-md">
+              <div class="flex flex-col">
+                <p class="font-medium">
+                  Ads - 1P (Noturno)
+                </p>
+                <p>Redes de Computadores</p>
+              </div>
+              <p class="badge badge-outline font-medium text-base">0 votos</p>
+            </li> -->
+          </ul>
+        </div>
       </div>
     </div>
   </main>
 </body>
+<script type="module" src="/projeto/dist/js/pages/admin/meet/index.js"></script>
+<script type="module" src="/projeto/dist/js/pages/admin/meet/cardProfessor.js"></script>
+<script type="module" src="/projeto/dist/js/pages/admin/meet/cardDisciplines.js"></script>
 
 </html>

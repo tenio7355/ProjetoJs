@@ -3,7 +3,7 @@ import timePeriod from "../types/timePeriod.js";
 import periodCourse from "../types/periodClasses.js";
 import specialization from "../types/specialization.js";
 
-interface IDiscipline{
+interface IDiscipline {
   id: string,
   idProfessor: string[],
   nameCourse: nameCourses
@@ -11,7 +11,7 @@ interface IDiscipline{
   periodCourse: periodCourse
   discipline: disciplines
   timePeriod: timePeriod
-  specialization: specialization
+  specialization: specialization[]
   workLoad: number,
 }
 

@@ -58,7 +58,7 @@ btnFilter.addEventListener("click", event => {
     const specializationValue = selectValue.innerText as "Todos" | specialization
 
     if (specializationValue !== "Todos") {
-        filter = filter.filter(discipline => discipline.specialization === specializationValue)
+        filter = filter.filter(discipline => discipline.specialization.includes(specializationValue))
     }
 
     if (timePeriodFilterValue !== "Todos") {

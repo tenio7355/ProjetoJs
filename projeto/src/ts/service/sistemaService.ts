@@ -1,3 +1,4 @@
+import System from "../classes/System.js"
 import ISystem from "../interface/ISystem.js"
 
 const endpoint = "http://localhost:3000/sistema"
@@ -8,10 +9,10 @@ export async function getSystemApi() {
   return response as ISystem
 }
 
-export async function putSystemApi(data: ISystem) {
+export async function putSystemApi(data: System) {
   const result = await fetch(`${endpoint}/`, {
     method: 'PUT',
     headers: applicationJson,
-    body: JSON.stringify(data)
+    body: JSON.stringify(data.informations())
   })
 }

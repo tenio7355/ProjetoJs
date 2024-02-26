@@ -15,6 +15,9 @@
   .btn-destructive{
     @apply bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90
   }
+  .btn-ghost{
+    @apply hover:bg-accent hover:text-accent-foreground
+  }
 
   .card{
     @apply rounded-xl border bg-card text-card-foreground shadow px-8 py-5 

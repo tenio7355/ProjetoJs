@@ -1,4 +1,4 @@
-import ISystem from "../interface/ISystem"
+import ISystem from "../interface/ISystem.js"
 
 export function returnTodayAndSystemDate(system: ISystem) {
     const formatToDate = dayjs(system.lastDayMeeting)

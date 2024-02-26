@@ -13,7 +13,7 @@ export default class Discipline implements IDiscipline {
   private _discipline: disciplines;
   private _timePeriod: timePeriod;
   private _workLoad: number;
-  private _specialization: specialization;
+  private _specialization: specialization[];
 
   constructor({ id, idProfessor, nameCourse, typeCourse, periodCourse, discipline, timePeriod, workLoad, specialization }: IDiscipline) {
     this._id = id
@@ -66,7 +66,7 @@ export default class Discipline implements IDiscipline {
   public get workLoad(): number {
     return this._workLoad;
   }
-  public get specialization(): specialization {
+  public get specialization(): specialization[] {
     return this._specialization;
   }
 
@@ -91,7 +91,7 @@ export default class Discipline implements IDiscipline {
   public set workLoad(value: number) {
     this._workLoad = value;
   }
-  public set specialization(value: specialization) {
+  public set specialization(value: specialization[]) {
     this._specialization = value;
   }
 }

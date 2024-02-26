@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Admin</title>
+  <title>Resultados</title>
   <link href="/projeto/src/style/output.css" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <div class="mx-auto border-b-2 max-w-8xl border-b-green-500">
@@ -19,7 +17,7 @@
               <ul class="flex space-x-8">
                 <li>
                   <a class=" hover:text-green-600 dark:hover:text-green-600"
-                    href="/projeto/src/pages/home/index.html">Home</a>
+                    href="/projeto/src/pages/admin/home/index.html">Home</a>
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
@@ -27,7 +25,7 @@
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
-                    href="/projeto/src/pages/registerClasses/index.html">Criar Reunião</a>
+                    href="/projeto/src/pages/admin/createMeet/index.html">Criar Reunião</a>
                 </li>
               </ul>
             </nav>
@@ -46,34 +44,5 @@
       </div>
     </div>
   </header>
-  <main class="flex justify-center mt-7 w-screen">
-    <div class="flex flex-col items-center gap-4 max-w-7xl w-full">
-      <div class="max-w-[30rem] w-full">
-        <div class="flex flex-col self-start w-full">
-          <div class="flex items-center gap-3">
-            <h1 class="font-medium text-2xl">Informações da Reunião</h1>
-            <button class="btn btn-default">Ver mais</button>
-          </div>
-          <div class="flex items-center gap-2">
-            <h2 class="font-medium">Status:</h2>
-            <div class="flex items-center gap-1">
-              <div class="p-1 bg-green-500 animate-pulse rounded-full"></div>
-              <p>Em andamento...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        6 de 10 professores votaram
-      </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        12 de 20 disciplinas foram escolhidas
-      </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        Reunião termina dia: 28/02/2024
-      </div>
-    </div>
-  </main>
 </body>
-
 </html>

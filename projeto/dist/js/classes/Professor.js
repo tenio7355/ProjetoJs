@@ -10,7 +10,7 @@ export default class Professor {
     _previousClasses;
     _workLoad;
     _isLoggedIn;
-    constructor({ id, cpf, name, email, password, specialization, shiftPreference, previousClasses, workLoad, isLoggedIn, isCoodinator }) {
+    constructor({ id, cpf, name, email, password, specialization, shiftPreference, previousClasses, workLoad, isLoggedIn, isCoordinator: isCoodinator }) {
         this._id = id;
         this._cpf = cpf;
         this._name = name;
@@ -30,7 +30,7 @@ export default class Professor {
             name: this.name,
             email: this.email,
             password: this.password,
-            isCoodinator: this.isCoodinator,
+            isCoordinator: this.isCoordinator,
             previousClasses: this.previousClasses,
             specialization: this.specialization,
             shiftPreference: this.shiftPreference,
@@ -69,10 +69,10 @@ export default class Professor {
     get email() {
         return this._email;
     }
-    get isCoodinator() {
+    get isCoordinator() {
         return this._isCoodinator;
     }
-    set isCoodinator(value) {
+    set isCoordinator(value) {
         this._isCoodinator = value;
     }
     set cpf(value) {

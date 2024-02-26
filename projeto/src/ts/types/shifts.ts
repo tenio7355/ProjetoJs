@@ -1,2 +1,2 @@
-type shift = "Manhã" | "Tarde" | "Noite" | "Integral"
+type shift = "Matutino" | "Vespertino" | "Noturno" | "Integral"
 export default shift

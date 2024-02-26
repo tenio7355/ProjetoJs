@@ -17,7 +17,7 @@ formLogin.addEventListener("submit", async event=>{
       if(matchPassword){
         admin.isLoggedIn = true
         await putAdmin(admin)
-        window.location.href = "../home.html"
+        window.location.href = "../home/index.html"
       } else {
         console.log("Senha incorreta");
       }
