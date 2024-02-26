@@ -4,3 +4,4 @@ import { putProfessorApi } from "../../service/professoresService.js"
 export async function putProfessor(professor: Professor){
   await putProfessorApi(professor) 
 }
+

@@ -13,11 +13,11 @@ const formLogin = document.getElementById("form-login") as HTMLFormElement
 formLogin.addEventListener("submit", async event=>{
   event.preventDefault()
   if(cpfInput.value !== "" && passwordInput.value !== ""){
-    const findedEmail = allProfessors.find(professor=> cpfInput.value === professor.email)
-    if(findedEmail){
-      const passwordMatched = findedEmail.password === passwordInput.value
+    const findedCpf = allProfessors.find(professor=> cpfInput.value === professor.cpf)
+    if(findedCpf){
+      const passwordMatched = findedCpf.password === passwordInput.value
       if(passwordMatched){
-        const professor = new Professor(findedEmail)
+        const professor = new Professor(findedCpf)
         professor.isLoggedIn = true
         setLocalStorageProfessor(professor.id)
         await putProfessor(professor)

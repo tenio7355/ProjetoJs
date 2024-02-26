@@ -5,50 +5,68 @@
       "cpf": "12345678900",
       "name": "João Silva",
       "email": "joao.silva@example.com",
-      "password": "senha123",
-      "isCoodinator": false,
+      "password": "senhadef",
+      "isCoordinator": true,
+      "previousClasses": [
+        "Programação Web - 2024/1",
+        "Banco de Dados - 2024/1",
+        "Informática - 2024/1"
+      ],
       "specialization": [
-        "Programação"
+        "Programação",
+        "Banco de Dados"
       ],
       "shiftPreference": [
+        "Matutino",
         "Vespertino"
       ],
-      "previousClasses": [],
-      "workLoad": 5,
-      "isLoggedIn": false
+      "workLoad": 10,
+      "isLoggedIn": true
     },
     {
       "id": "2",
       "cpf": "98765432100",
       "name": "Maria Oliveira",
       "email": "maria.oliveira@example.com",
-      "password": "senha456",
-      "isCoodinator": true,
+      "password": "senhadef",
+      "isCoordinator": false,
+      "previousClasses": [
+        "Redes de Computadores - 2024/1"
+      ],
       "specialization": [
-        "Segurança"
+        "Redes",
+        "Informática"
       ],
       "shiftPreference": [
-        "Matutino"
+        "Noturno",
+        "Integral"
       ],
-      "previousClasses": [],
-      "workLoad": 8,
-      "isLoggedIn": false
+      "workLoad": 14,
+      "isLoggedIn": true
     },
     {
       "id": "3",
       "cpf": "11122233344",
       "name": "Carlos Santos",
       "email": "carlos.santos@example.com",
-      "password": "senha789",
-      "isCoodinator": false,
+      "password": "senhadef",
+      "isCoordinator": false,
+      "previousClasses": [
+        "Segurança da Informação - 2024/1",
+        "Sistemas Operacionais - 2024/1",
+        "Msi - 2024/1",
+        "Informática B - 2024/1",
+        "Engenharia Civíl - 2024/1"
+      ],
       "specialization": [
-        "Banco de Dados"
+        "Segurança",
+        "Sistemas Operacionais"
       ],
       "shiftPreference": [
-        "Vespertino"
+        "Vespertino",
+        "Noturno"
       ],
-      "previousClasses": [],
-      "workLoad": 10,
+      "workLoad": 11,
       "isLoggedIn": false
     },
     {
@@ -56,16 +74,18 @@
       "cpf": "55566677788",
       "name": "Ana Lima",
       "email": "ana.lima@example.com",
-      "password": "senhaabc",
-      "isCoodinator": false,
+      "password": "senhadef",
+      "isCoordinator": false,
+      "previousClasses": [],
       "specialization": [
-        "Informática"
+        "Informática",
+        "Ciência da Computação"
       ],
       "shiftPreference": [
-        "Matutino"
+        "Matutino",
+        "Integral"
       ],
-      "previousClasses": [],
-      "workLoad": 13,
+      "workLoad": 0,
       "isLoggedIn": false
     },
     {
@@ -74,14 +94,17 @@
       "name": "Pedro Costa",
       "email": "pedro.costa@example.com",
       "password": "senhadef",
+      "isCoordinator": true,
       "previousClasses": [],
       "specialization": [
-        "Programação"
+        "Banco de Dados",
+        "Informática"
       ],
       "shiftPreference": [
+        "Vespertino",
         "Noturno"
       ],
-      "workLoad": 12,
+      "workLoad": 9,
       "isLoggedIn": true
     },
     {
@@ -89,16 +112,22 @@
       "cpf": "11223344555",
       "name": "Luciana Pereira",
       "email": "luciana.pereira@example.com",
-      "password": "senhaghi",
-      "isCoodinator": false,
+      "password": "senhadef",
+      "isCoordinator": false,
+      "previousClasses": [
+        "Desenvolvimento de Programação Web - 2024/1",
+        "Ads - 2024/2",
+        "Informática - 2024/1",
+        "Ads - 2024/1"
+      ],
       "specialization": [
-        "Sistemas Operacionais"
+        "Programação"
       ],
       "shiftPreference": [
-        "Vespertino"
+        "Vespertino",
+        "Noturno"
       ],
-      "previousClasses": [],
-      "workLoad": 14,
+      "workLoad": 13,
       "isLoggedIn": false
     },
     {
@@ -106,33 +135,37 @@
       "cpf": "66778899001",
       "name": "Rafaela Sousa",
       "email": "rafaela.sousa@example.com",
-      "password": "senhaklm",
-      "isCoodinator": true,
+      "password": "senhadef",
+      "isCoordinator": false,
+      "previousClasses": [],
       "specialization": [
         "Redes"
       ],
       "shiftPreference": [
+        "Matutino",
         "Noturno"
       ],
-      "previousClasses": [],
-      "workLoad": 0,
-      "isLoggedIn": false
+      "workLoad": 13,
+      "isLoggedIn": true
     },
     {
       "id": "8",
       "cpf": "99887766554",
       "name": "Gabriel Santos",
       "email": "gabriel.santos@example.com",
-      "password": "senhaopq",
-      "isCoodinator": false,
+      "password": "senhadef",
+      "isCoordinator": false,
       "specialization": [
         "Informática"
       ],
       "shiftPreference": [
-        "Matutino"
+        "Matutino",
+        "Vespertino"
       ],
-      "previousClasses": [],
-      "workLoad": 2,
+      "previousClasses": [
+        "Informática Básica - 2024/2"
+      ],
+      "workLoad": 0,
       "isLoggedIn": false
     },
     {
@@ -140,43 +173,49 @@
       "cpf": "65432198732",
       "name": "Carolina Lima",
       "email": "carolina.lima@example.com",
-      "password": "senharst",
-      "isCoodinator": false,
+      "password": "senhadef",
+      "isCoordinator": false,
       "specialization": [
         "Banco de Dados"
       ],
       "shiftPreference": [
-        "Integral"
+        "Vespertino",
+        "Noturno"
       ],
-      "previousClasses": [],
+      "previousClasses": [
+        "Programação Orientada a Objetos - 2024/2",
+        "Banco de Dados - 2024/2"
+      ],
       "workLoad": 0,
-      "isLoggedIn": true
+      "isLoggedIn": false
     },
     {
       "id": "10",
       "cpf": "12398745622",
       "name": "Mateus Oliveira",
       "email": "mateus.oliveira@example.com",
-      "password": "senhauvw",
-      "isCoodinator": false,
+      "password": "senhadef",
+      "isCoordinator": false,
       "specialization": [
-        "Banco de Dados"
+        "Programação",
+        "Redes"
       ],
       "shiftPreference": [
+        "Vespertino",
         "Noturno"
       ],
-      "previousClasses": [],
-      "workLoad": 12,
-      "isLoggedIn": true
+      "previousClasses": [
+        "Redes de Computadores - 2024/2"
+      ],
+      "workLoad": 0,
+      "isLoggedIn": false
     }
   ],
   "disciplinas": [
     {
       "id": "1",
       "idProfessor": [
-        "1",
-        "5",
-        "7"
+        "5"
       ],
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
@@ -191,45 +230,42 @@
     {
       "id": "2",
       "idProfessor": [
-        "2",
-        "5"
+        "5",
+        "1"
       ],
       "nameCourse": "Informática",
       "typeCourse": "Gradução",
       "periodCourse": "2024/1",
-      "discipline": "Redes de Computadores",
-      "timePeriod": "Noturno",
-      "workLoad": 4,
-      "specialization": [
-        "Redes"
-      ]
-    },
-    {
-      "id": "3",
-      "idProfessor": [
-        "3",
-        "5"
-      ],
-      "nameCourse": "Ads",
-      "typeCourse": "Gradução",
-      "periodCourse": "2024/1",
       "discipline": "Banco de Dados",
-      "timePeriod": "Matutino",
-      "workLoad": 4,
+      "timePeriod": "Noturno",
+      "workLoad": 5,
       "specialization": [
         "Banco de Dados"
       ]
     },
     {
+      "id": "3",
+      "idProfessor": [],
+      "nameCourse": "Msi",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Segurança da Informação",
+      "timePeriod": "Matutino",
+      "workLoad": 3,
+      "specialization": [
+        "Segurança"
+      ]
+    },
+    {
       "id": "4",
       "idProfessor": [
-        "4"
+        "2"
       ],
+      "nameCourse": "Informática A",
+      "typeCourse": "Técnico",
       "periodCourse": "2024/1",
       "discipline": "Lógica de Programação",
-      "nameCourse": "Informática",
-      "typeCourse": "Técnico",
-      "timePeriod": "Matutino",
+      "timePeriod": "Integral",
       "workLoad": 4,
       "specialization": [
         "Programação"
@@ -238,103 +274,220 @@
     {
       "id": "5",
       "idProfessor": [],
+      "nameCourse": "Ads",
+      "typeCourse": "Pós-Graduação",
+      "periodCourse": "2024/2",
+      "discipline": "Desenvolvimento de Programação Web",
+      "timePeriod": "Noturno",
+      "specialization": [
+        "Programação"
+      ],
+      "workLoad": 6
+    },
+    {
+      "id": "6",
+      "idProfessor": [
+        "2"
+      ],
+      "nameCourse": "Informática B",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/2",
+      "discipline": "Sistemas Operacionais",
+      "timePeriod": "Matutino",
+      "workLoad": 4,
+      "specialization": [
+        "Sistemas Operacionais"
+      ]
+    },
+    {
+      "id": "7",
+      "idProfessor": [],
       "nameCourse": "Msi",
       "typeCourse": "Gradução",
-      "periodCourse": "2024/1",
-      "discipline": "Segurança da Informação",
+      "periodCourse": "2024/2",
+      "discipline": "Redes de Computadores",
+      "timePeriod": "Vespertino",
+      "specialization": [
+        "Redes"
+      ],
+      "workLoad": 5
+    },
+    {
+      "id": "8",
+      "idProfessor": [],
+      "nameCourse": "Informática",
+      "typeCourse": "Técnico",
+      "periodCourse": "2024/2",
+      "discipline": "Informática Básica",
       "timePeriod": "Noturno",
+      "specialization": [
+        "Informática"
+      ],
+      "workLoad": 4
+    },
+    {
+      "id": "9",
+      "idProfessor": [
+        "7"
+      ],
+      "nameCourse": "Engenharia Civíl",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/2",
+      "discipline": "Organização de Computadores",
+      "timePeriod": "Matutino",
       "workLoad": 4,
+      "specialization": [
+        "Sistemas Operacionais"
+      ]
+    },
+    {
+      "id": "10",
+      "idProfessor": [],
+      "nameCourse": "Ads",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/2",
+      "discipline": "Programação Orientada a Objetos",
+      "timePeriod": "Integral",
+      "specialization": [
+        "Programação"
+      ],
+      "workLoad": 4
+    },
+    {
+      "id": "11",
+      "idProfessor": [
+        "7"
+      ],
+      "nameCourse": "Ads",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/2",
+      "discipline": "Desenvolvimento de Programação Web",
+      "timePeriod": "Matutino",
+      "workLoad": 4,
+      "specialization": [
+        "Programação"
+      ]
+    },
+    {
+      "id": "12",
+      "idProfessor": [
+        "2"
+      ],
+      "nameCourse": "Msi",
+      "typeCourse": "Pós-Graduação",
+      "periodCourse": "2024/2",
+      "discipline": "Segurança da Informação",
+      "timePeriod": "Vespertino",
+      "workLoad": 6,
       "specialization": [
         "Segurança"
       ]
     },
     {
-      "id": "6",
-      "idProfessor": [
-        "6"
-      ],
-      "nameCourse": "Ads",
-      "typeCourse": "Gradução",
+      "id": "13",
+      "idProfessor": [],
+      "nameCourse": "Informática",
+      "typeCourse": "Técnico",
       "periodCourse": "2024/1",
-      "discipline": "Desenvolvimento de Programação Web",
-      "timePeriod": "Noturno",
-      "workLoad": 4,
+      "discipline": "Lógica de Programação",
+      "timePeriod": "Integral",
       "specialization": [
         "Programação"
-      ]
+      ],
+      "workLoad": 5
     },
     {
-      "id": "7",
+      "id": "14",
+      "idProfessor": [],
+      "nameCourse": "Informática A",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/2",
+      "discipline": "Banco de Dados",
+      "timePeriod": "Noturno",
+      "specialization": [
+        "Banco de Dados"
+      ],
+      "workLoad": 4
+    },
+    {
+      "id": "15",
+      "idProfessor": [],
+      "nameCourse": "Informática B",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Sistemas Operacionais",
+      "timePeriod": "Vespertino",
+      "specialization": [
+        "Sistemas Operacionais"
+      ],
+      "workLoad": 4
+    },
+    {
+      "id": "16",
+      "idProfessor": [],
+      "nameCourse": "Ads",
+      "typeCourse": "Pós-Graduação",
+      "periodCourse": "2024/1",
+      "discipline": "Programação Web",
+      "timePeriod": "Matutino",
+      "specialization": [
+        "Programação"
+      ],
+      "workLoad": 4
+    },
+    {
+      "id": "17",
       "idProfessor": [
         "7"
       ],
+      "nameCourse": "Msi",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Redes de Computadores",
+      "timePeriod": "Integral",
+      "workLoad": 5,
+      "specialization": [
+        "Redes"
+      ]
+    },
+    {
+      "id": "18",
+      "idProfessor": [],
       "nameCourse": "Informática",
       "typeCourse": "Gradução",
-      "periodCourse": "2024/2",
-      "discipline": "Organização de Computadores",
-      "timePeriod": "Integral",
-      "workLoad": 6,
-      "specialization": [
-        "Ciência da Computação"
-      ]
-    },
-    {
-      "id": "8",
-      "idProfessor": [
-        "8"
-      ],
-      "periodCourse": "2024/2",
-      "discipline": "Sistemas Operacionais",
-      "nameCourse": "Ads",
-      "typeCourse": "Gradução",
-      "timePeriod": "Matutino",
-      "workLoad": 4,
-      "specialization": [
-        "Ciência da Computação"
-      ]
-    },
-    {
-      "id": "9",
-      "idProfessor": [
-        "9"
-      ],
       "periodCourse": "2024/2",
       "discipline": "Informática Básica",
-      "nameCourse": "Informática",
-      "typeCourse": "Técnico",
-      "timePeriod": "Vespertino",
-      "workLoad": 4,
+      "timePeriod": "Noturno",
       "specialization": [
         "Informática"
-      ]
-    },
-    {
-      "id": "10",
-      "idProfessor": [
-        "10"
       ],
-      "periodCourse": "2024/2",
-      "discipline": "Programação Orientada a Objetos",
-      "nameCourse": "Ads",
-      "typeCourse": "Gradução",
-      "timePeriod": "Noturno",
-      "workLoad": 4,
-      "specialization": [
-        "Programação"
-      ]
+      "workLoad": 4
     },
     {
-      "id": "11",
+      "id": "19",
+      "idProfessor": [],
+      "nameCourse": "Engenharia Civíl",
+      "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Organização de Computadores",
+      "timePeriod": "Matutino",
+      "specialization": [
+        "Sistemas Operacionais"
+      ],
+      "workLoad": 4
+    },
+    {
+      "id": "20",
       "idProfessor": [],
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
       "periodCourse": "2024/1",
-      "discipline": "Banco de Dados",
-      "timePeriod": "Matutino",
-      "workLoad": 4,
+      "discipline": "Programação Orientada a Objetos",
+      "timePeriod": "Vespertino",
       "specialization": [
-        "Banco de Dados"
-      ]
+        "Programação"
+      ],
+      "workLoad": 4
     }
   ],
   "sistema": {

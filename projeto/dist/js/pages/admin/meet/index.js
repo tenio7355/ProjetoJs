@@ -29,7 +29,6 @@ function handleBtnActionMeeting() {
             console.log("entrou");
             system.isMeeting = false;
             await resolveConflictsMeeting();
-            // putSystem(system)
             // window.location.href = "../meetingResult/index.html"
         });
     }

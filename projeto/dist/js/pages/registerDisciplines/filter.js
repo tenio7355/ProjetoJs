@@ -52,10 +52,10 @@ btnFilter.addEventListener("click", event => {
     }
     if (subscribedFilterValue !== "Todas") {
         if (subscribedFilterValue === "Nenhuma") {
-            filter = filter.filter(discipline => discipline.discipline.length === 0);
+            filter = filter.filter(discipline => discipline.idProfessor.length === 0);
         }
         else {
-            filter = filter.filter(discipline => discipline.discipline.length !== 0);
+            filter = filter.filter(discipline => discipline.idProfessor.length !== 0);
         }
     }
     filteringDiscipline(filter);

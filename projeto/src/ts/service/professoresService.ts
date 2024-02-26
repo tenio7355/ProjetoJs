@@ -1,3 +1,4 @@
+import Discipline from "../classes/Discipline.js"
 import Professor from "../classes/Professor.js"
 import IProfessor from "../interface/IProfessor.js"
 
@@ -18,5 +19,17 @@ export async function putProfessorApi(data: Professor) {
     method: 'PUT',
     headers: applicationJson,
     body: JSON.stringify(data.informations())
+  })
+}
+export async function putTwoApi(data: Professor, dataDisciplines: Discipline) {
+  await fetch(`${endpoint}/${data.id}`, {
+    method: 'PUT',
+    headers: applicationJson,
+    body: JSON.stringify(data.informations())
+  })
+  await fetch(`${endpoint}/${dataDisciplines.id}`, {
+    method: 'PUT',
+    headers: applicationJson,
+    body: JSON.stringify(dataDisciplines.informations())
   })
 }

@@ -2,11 +2,12 @@ import Discipline from "../classes/Discipline.js"
 import Professor from "../classes/Professor.js"
 import System from "../classes/System.js"
 import { getAllDisciplines } from "../controller/discipline/getDiscipline.js"
+import { putDiscipline } from "../controller/discipline/putDiscipline.js"
 import { getAllProfessor } from "../controller/professor/getProfessor.js"
+import { putProfessor } from "../controller/professor/putProfessor.js"
 import { getSystem } from "../controller/system/getSystem.js"
 import IDiscipline from "../interface/IDiscipline.js"
 import IProfessor from "../interface/IProfessor.js"
-import previousClasses from "../types/previousClasses.js"
 import constructPreviousClasses from "./contructPreviousClasses.js"
 /*
 precisa estar dentro da carga horária permitida (feito)
@@ -85,7 +86,7 @@ export default async function resolveConflictsMeeting() {
         return;
       }
 
-      professorsAvailableArray.map(professorAvailable => {
+      const professorsWithPoints = professorsAvailableArray.map(professorAvailable => {
         //retorna true caso todos os elementos desse array tenham a carga horária maior que a do professor atual iterando
         const isSmallerWorkLoad = professorsAvailableArray.every(thisProfessor => {
           const currentProfessorWorkLoad = professorAvailable.professor.workLoad
@@ -100,12 +101,31 @@ export default async function resolveConflictsMeeting() {
         }
 
         professorAvailable.points += addPointsToProfessor(professorAvailable.professor, discipline)
+        return professorAvailable
       })
-      sortAndSaveProfessorInDiscipline(discipline, professorsAvailableArray, "available")
+      sortAndSaveProfessorInDiscipline(discipline, professorsWithPoints, "available")
 
       alterProfessors(discipline)
     }
   })
+
+  await saveOnDataBase()
+
+
+  /**
+  * Salva atualizações das tabelas no bando de dados
+  */
+  async function saveOnDataBase() {
+    allProfessors.forEach(async element => {
+      const professor = new Professor(element)
+      await putProfessor(professor)
+    });
+    allDisciplines.forEach(async element => {
+      const discipline = new Discipline(element)
+      await putDiscipline(discipline)
+    });
+  }
+
   /**
   * Faz o sort e o save do id do professor escolhido na disciplina
   * @param discipline disciplina atual do tipo Discipline
@@ -126,9 +146,6 @@ export default async function resolveConflictsMeeting() {
     const professor = new Professor(professorFound)
     professor.workLoad += discipline.workLoad
     professor.previousClasses.push(constructPreviousClasses(discipline.nameCourse, discipline.periodCourse))
-    console.log("------------")
-    console.log("🚀 ~ alterProfessors ~ professor:", professor)
-    console.log("🚀 ~ alterProfessors ~ professor:", discipline)
     allProfessors.splice(professorFoundIndex, 1, professor.informations())
   }
 

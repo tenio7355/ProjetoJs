@@ -15,3 +15,15 @@ export async function putProfessorApi(data) {
         body: JSON.stringify(data.informations())
     });
 }
+export async function putTwoApi(data, dataDisciplines) {
+    await fetch(`${endpoint}/${data.id}`, {
+        method: 'PUT',
+        headers: applicationJson,
+        body: JSON.stringify(data.informations())
+    });
+    await fetch(`${endpoint}/${dataDisciplines.id}`, {
+        method: 'PUT',
+        headers: applicationJson,
+        body: JSON.stringify(dataDisciplines.informations())
+    });
+}
