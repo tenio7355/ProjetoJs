@@ -122,6 +122,7 @@ export default async function resolveConflictsMeeting() {
     });
     allDisciplines.forEach(async element => {
       const discipline = new Discipline(element)
+      console.log("🚀 ~ saveOnDataBase ~ discipline:", discipline)
       await putDiscipline(discipline)
     });
   }

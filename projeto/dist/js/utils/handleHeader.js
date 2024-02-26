@@ -15,7 +15,7 @@ export function handleHeader(professor) {
             console.log("🚀 ~ handleHeader ~ btnLogout:", btnLogout);
             deleteLocalStorage();
             removeListener();
-            window.location.href = "/projeto/src/pages/login/index.html";
+            window.location.href = "/pages/login/index.html";
         });
     });
     function removeListener() {

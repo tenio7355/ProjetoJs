@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Admin</title>
-  <link href="public/style/output.css" rel="stylesheet">
+  <link href="/style/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 </head>
 
 <body>
@@ -14,20 +15,20 @@
       <div class="py-4 mx-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 lg:mx-0">
         <div class="relative flex items-center">
           <div class="relative items-center hidden gap-8 lg:flex">
-            <img src="public/images/LOGO-OFICIAL.png" alt="logo" width="35" height="35">
+            <img src="/images/LOGO-OFICIAL.png" alt="logo" width="35" height="35">
             <nav class="text-sm font-semibold leading-6 text-slate-700">
               <ul class="flex space-x-8">
                 <li>
                   <a class=" hover:text-green-600 dark:hover:text-green-600"
-                    href="src/pages/home/index.html">Home</a>
+                    href="/pages/home/index.html">Home</a>
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
-                    href="src/pages/admin/meet/index.html">Reunião</a>
+                    href="/pages/admin/meet/index.html">Reunião</a>
                 </li>
                 <li>
                   <a class="hover:text-green-600 dark:hover:text-green-600"
-                    href="src/pages/registerClasses/index.html">Criar Reunião</a>
+                    href="/pages/registerClasses/index.html">Criar Reunião</a>
                 </li>
               </ul>
             </nav>
@@ -57,23 +58,23 @@
           <div class="flex items-center gap-2">
             <h2 class="font-medium">Status:</h2>
             <div class="flex items-center gap-1">
-              <div class="p-1 bg-green-500 animate-pulse rounded-full"></div>
-              <p>Em andamento...</p>
+              <div id="meeting-status-color" class="p-1 rounded-full"></div>
+              <p id="meeting-status-text"></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        6 de 10 professores votaram
+      <div id="professor-voted" class="card max-w-[30rem] w-full flex justify-center font-medium">
       </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        12 de 20 disciplinas foram escolhidas
+      <div id="discipline-voted" class="card max-w-[30rem] w-full flex justify-center font-medium">
+        
       </div>
-      <div class="card max-w-[30rem] w-full flex justify-center font-medium">
-        Reunião termina dia: 28/02/2024
+      <div id="end-meeting" class="card max-w-[30rem] w-full flex justify-center font-medium">
+        
       </div>
     </div>
   </main>
+<script type="module" src="/dist/js/pages/admin/home/index.js"></script>
 </body>
 
 </html>

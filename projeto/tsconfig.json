@@ -3,8 +3,8 @@
     "target": "ES2022",
     "strict": true,
     "module": "ES2022",
-    "outDir": "dist/js",
-    "moduleResolution": "node"
+    "outDir": "public/dist/js",
+    "moduleResolution": "node",
   },
   "include": [
     "./src/ts/**/*",

@@ -21,7 +21,7 @@ formLogin.addEventListener("submit", async event=>{
         professor.isLoggedIn = true
         setLocalStorageProfessor(professor.id)
         await putProfessor(professor)
-        window.location.href = "../home"
+        window.location.href = "./pages/home/index.html"
       } else {
         console.log("Senha incorreta");
       }

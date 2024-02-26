@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "",
     "tail": "npx tailwindcss -i ./public/style/input.css -o ./public/style/output.css --watch",
-    "tsc": "npx tsc -w"
+    "tsc": "npx tsc -w",
+    "compile": "npx tsc"
   },
   "keywords": [],
   "author": "",

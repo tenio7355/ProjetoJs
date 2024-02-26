@@ -2,7 +2,6 @@ import { Dayjs } from "dayjs"
 import { getSystem } from "../../../controller/system/getSystem.js"
 import { returnTodayAndSystemDate } from "../../../utils/handleDate.js"
 import System from "../../../classes/System.js"
-import { putSystem } from "../../../controller/system/putSystem.js"
 import resolveConflictsMeeting from "../../../utils/resolveConflictsMeeting.js"
 
 const statusColor = document.getElementById("meeting-status-color")!

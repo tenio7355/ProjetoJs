@@ -76,7 +76,10 @@
       "email": "ana.lima@example.com",
       "password": "senhadef",
       "isCoordinator": false,
-      "previousClasses": [],
+      "previousClasses": [
+        "Informática - 2024/2",
+        "Informática - 2024/2"
+      ],
       "specialization": [
         "Informática",
         "Ciência da Computação"
@@ -85,7 +88,7 @@
         "Matutino",
         "Integral"
       ],
-      "workLoad": 0,
+      "workLoad": 8,
       "isLoggedIn": false
     },
     {
@@ -155,6 +158,10 @@
       "email": "gabriel.santos@example.com",
       "password": "senhadef",
       "isCoordinator": false,
+      "previousClasses": [
+        "Informática Básica - 2024/2",
+        "Ads - 2024/1"
+      ],
       "specialization": [
         "Informática"
       ],
@@ -162,10 +169,7 @@
         "Matutino",
         "Vespertino"
       ],
-      "previousClasses": [
-        "Informática Básica - 2024/2"
-      ],
-      "workLoad": 0,
+      "workLoad": 4,
       "isLoggedIn": false
     },
     {
@@ -279,10 +283,10 @@
       "periodCourse": "2024/2",
       "discipline": "Desenvolvimento de Programação Web",
       "timePeriod": "Noturno",
+      "workLoad": 6,
       "specialization": [
         "Programação"
-      ],
-      "workLoad": 6
+      ]
     },
     {
       "id": "6",
@@ -307,10 +311,10 @@
       "periodCourse": "2024/2",
       "discipline": "Redes de Computadores",
       "timePeriod": "Vespertino",
+      "workLoad": 5,
       "specialization": [
         "Redes"
-      ],
-      "workLoad": 5
+      ]
     },
     {
       "id": "8",
@@ -320,10 +324,10 @@
       "periodCourse": "2024/2",
       "discipline": "Informática Básica",
       "timePeriod": "Noturno",
+      "workLoad": 4,
       "specialization": [
         "Informática"
-      ],
-      "workLoad": 4
+      ]
     },
     {
       "id": "9",
@@ -348,10 +352,10 @@
       "periodCourse": "2024/2",
       "discipline": "Programação Orientada a Objetos",
       "timePeriod": "Integral",
+      "workLoad": 4,
       "specialization": [
         "Programação"
-      ],
-      "workLoad": 4
+      ]
     },
     {
       "id": "11",
@@ -391,10 +395,10 @@
       "periodCourse": "2024/1",
       "discipline": "Lógica de Programação",
       "timePeriod": "Integral",
+      "workLoad": 5,
       "specialization": [
         "Programação"
-      ],
-      "workLoad": 5
+      ]
     },
     {
       "id": "14",
@@ -404,10 +408,10 @@
       "periodCourse": "2024/2",
       "discipline": "Banco de Dados",
       "timePeriod": "Noturno",
+      "workLoad": 4,
       "specialization": [
         "Banco de Dados"
-      ],
-      "workLoad": 4
+      ]
     },
     {
       "id": "15",
@@ -417,10 +421,10 @@
       "periodCourse": "2024/1",
       "discipline": "Sistemas Operacionais",
       "timePeriod": "Vespertino",
+      "workLoad": 4,
       "specialization": [
         "Sistemas Operacionais"
-      ],
-      "workLoad": 4
+      ]
     },
     {
       "id": "16",
@@ -430,10 +434,10 @@
       "periodCourse": "2024/1",
       "discipline": "Programação Web",
       "timePeriod": "Matutino",
+      "workLoad": 4,
       "specialization": [
         "Programação"
-      ],
-      "workLoad": 4
+      ]
     },
     {
       "id": "17",
@@ -458,10 +462,10 @@
       "periodCourse": "2024/2",
       "discipline": "Informática Básica",
       "timePeriod": "Noturno",
+      "workLoad": 4,
       "specialization": [
         "Informática"
-      ],
-      "workLoad": 4
+      ]
     },
     {
       "id": "19",
@@ -471,10 +475,10 @@
       "periodCourse": "2024/1",
       "discipline": "Organização de Computadores",
       "timePeriod": "Matutino",
+      "workLoad": 4,
       "specialization": [
         "Sistemas Operacionais"
-      ],
-      "workLoad": 4
+      ]
     },
     {
       "id": "20",
@@ -484,10 +488,10 @@
       "periodCourse": "2024/1",
       "discipline": "Programação Orientada a Objetos",
       "timePeriod": "Vespertino",
+      "workLoad": 4,
       "specialization": [
         "Programação"
-      ],
-      "workLoad": 4
+      ]
     }
   ],
   "sistema": {
