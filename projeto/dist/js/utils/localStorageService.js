@@ -10,3 +10,6 @@ export function setLocalStorageProfessor(userId) {
         localStorage.setItem("user", JSON.stringify(userId));
     }
 }
+export function deleteLocalStorage() {
+    localStorage.removeItem("user");
+}

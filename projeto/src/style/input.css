@@ -68,6 +68,17 @@
   .select-content{
     @apply relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md
   }
+
+  .alert{
+    @apply relative w-full rounded-lg border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground [&>svg~*]:pl-7
+  }
+  .alert-default{
+    @apply bg-background text-foreground
+  }
+  .alert-destructive{
+    @apply border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive
+  }
+
 }
 
 @layer base {

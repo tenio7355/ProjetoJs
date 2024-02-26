@@ -140,7 +140,6 @@
       "id": "2",
       "idProfessor": [
         "2",
-        "5",
         "5"
       ],
       "nameCourse": "Informática",
@@ -154,7 +153,8 @@
     {
       "id": "3",
       "idProfessor": [
-        "3"
+        "3",
+        "5"
       ],
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
@@ -179,13 +179,11 @@
     },
     {
       "id": "5",
-      "idProfessor": [
-        "5"
-      ],
-      "periodCourse": "2024/1",
-      "discipline": "Segurança da Informação",
+      "idProfessor": [],
       "nameCourse": "Msi",
       "typeCourse": "Gradução",
+      "periodCourse": "2024/1",
+      "discipline": "Segurança da Informação",
       "timePeriod": "Noturno",
       "workLoad": 4,
       "specialization": "Segurança"
@@ -257,9 +255,7 @@
     },
     {
       "id": "11",
-      "idProfessor": [
-        "5"
-      ],
+      "idProfessor": [],
       "nameCourse": "Ads",
       "typeCourse": "Gradução",
       "periodCourse": "2024/1",
@@ -270,6 +266,13 @@
     }
   ],
   "sistema": {
-    "isMeeting": true
+    "isMeeting": true,
+    "lastDayMeeting": "2024/02/24"
+  },
+  "administrador": {
+    "name": "Admin Geral",
+    "email": "adminGer4l@gmail.com",
+    "password": "senhaTop",
+    "isLoggedIn": true
   }
 }

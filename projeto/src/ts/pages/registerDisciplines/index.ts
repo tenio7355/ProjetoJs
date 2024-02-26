@@ -4,13 +4,17 @@ import { getAllDisciplines } from "../../controller/discipline/getDiscipline.js"
 import { putDiscipline } from "../../controller/discipline/putDiscipline.js"
 import { putProfessor } from "../../controller/professor/putProfessor.js"
 import currentProfessor from "../../utils/currentProfessor.js"
+import { handleHeader } from "../../utils/handleHeader.js"
 import { removeSerchParamsUrl } from "../../utils/modifySearchParamsUrl.js"
 
 const dialogOverlay = document.getElementById(`dialog-overlay`) as HTMLElement
 const dialogContent = document.getElementById(`dialog-content`) as HTMLElement
+const alertMeetFinished = document.getElementById(`alert-meetFinished`) as HTMLElement
 
 const professor = new Professor(await currentProfessor())
 const allDisciplines = await getAllDisciplines()
+
+handleHeader(professor)
 
 dialogContent.innerHTML += `
   <div>

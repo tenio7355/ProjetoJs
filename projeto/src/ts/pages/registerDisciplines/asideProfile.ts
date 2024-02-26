@@ -6,13 +6,13 @@ const allDisciplines = await getAllDisciplines()
 
 const inicialUserName = document.getElementById("inicial-name-user")!
 const userName = document.getElementById("user-name")!
-const userSpecialization = document.getElementById("user-specialization")!
+const typeProfessor = document.getElementById("user-specialization")!
 const userWorkLoad = document.getElementById("user-workLoad")!
 const userDisciplines = document.getElementById("user-disciplines")!
 
 inicialUserName.innerText = professor.name[0]
 userName.innerText = professor.name
-userSpecialization.innerText = professor.specialization
+typeProfessor.innerText = professor.isCoodinator ? "Professor (Coordenador)" : "Professor"
 
 const wordLoadLimit = professor.isCoodinator ? 10 : 14
 userWorkLoad.innerText = `${professor.workLoad.toString()}h de ${wordLoadLimit}h semanais`

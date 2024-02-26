@@ -5,6 +5,14 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        rotateCenter: {
+          "0%": {
+            transform: "rotate(0)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          }
+        },
         slideInBottom: {
           "0%": {
             transform: "translateY(100px)",
@@ -18,7 +26,8 @@ module.exports = {
       },
       animation: {
         "in": "slideInBottom 0.3s ease-in-out both",
-        "out": "slideInBottom 0.3s ease-in-out reverse both"
+        "out": "slideInBottom 0.3s ease-in-out reverse both",
+        "rotate": "rotateCenter 0.6s linear infinite"
       },
       colors: {
         cor: {

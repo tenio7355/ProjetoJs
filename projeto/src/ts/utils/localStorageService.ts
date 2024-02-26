@@ -5,9 +5,12 @@ export function getLocalStorageProfessor(){
     return result
   }
 }
-
 export function setLocalStorageProfessor(userId: string){
   if(userId !== ""){
     localStorage.setItem("user", JSON.stringify(userId))!
   }
+}
+
+export function deleteLocalStorage(){
+    localStorage.removeItem("user")
 }

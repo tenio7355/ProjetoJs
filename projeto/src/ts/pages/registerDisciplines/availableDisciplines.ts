@@ -6,7 +6,10 @@ import currentProfessor from "../../utils/currentProfessor.js"
 import { putProfessor } from "../../controller/professor/putProfessor.js"
 import Professor from "../../classes/Professor.js"
 import IDiscipline from "../../interface/IDiscipline.js"
-
+import { returnTodayAndSystemDate } from "../../utils/handleDate.js"
+import { getSystem } from "../../controller/system/getSystem.js"
+import { Dayjs } from "dayjs"
+import { createLoading } from "../../utils/awaitPromisse.js"
 const allDisciplines = await getAllDisciplines()
 let filteredDisciplines = allDisciplines
 const professor = new Professor(await currentProfessor())
@@ -14,6 +17,11 @@ const professor = new Professor(await currentProfessor())
 const ulDiscipline = document.getElementById("ulDiscipline")!
 const dialogOverlay = document.getElementById(`dialog-overlay`)!
 let idTimeOut: NodeJS.Timeout | undefined
+
+const system = await getSystem()
+const [today, formatToDate, systemDatePlus] = returnTodayAndSystemDate(system) as Dayjs[]
+
+await createLoading(ulDiscipline, 1200)
 
 creatCards()
 
@@ -67,8 +75,9 @@ function creatCards() {
     }
   })
 
+
   //LISTENER SUBSCRIBE/UNSUBSCRIBE DISCIPLINES
-  allDisciplines.forEach(thisDiscipline => {
+  filteredDisciplines.forEach(thisDiscipline => {
     const buttonSubscribe = document.getElementById(`${thisDiscipline.id}`) as HTMLElement
     const buttonUnsubscribe = document.getElementById(`unsubscribe-${thisDiscipline.id}`) as HTMLElement
     const isIncluded = thisDiscipline.idProfessor.includes(professor.id)
@@ -84,24 +93,26 @@ function creatCards() {
       const toastOverlay = document.getElementById("toast-overlay")!
       const toastContent = document.getElementById("toast-content")!
 
+      const canSubscribe = verifyIfCanSubscribe(toastOverlay, toastContent)
+      if (!canSubscribe) {
+        return
+      }
+
       if (professor.workLoad + discipline.workLoad > wordLoadLimit) {
         toastContent.innerHTML = `
-      <div class="flex flex-col">
-      <h3 class="text-lg font-medium">Inscrição não realizada!</h3>
-      <p>Essa disciplina ultrapassa sua carga horária disponível.</p>
-      </div>
+        <div class="flex flex-col">
+          <h3 class="text-lg font-medium">Inscrição não realizada!</h3>
+          <p>Essa disciplina ultrapassa sua carga horária disponível.</p>
+        </div>
       `
-        toastOverlay.classList.remove("hidden")
-        toastContent.classList.add("toast-destructive")
-        if (!idTimeOut) {
-          idTimeOut = setTimeout(() => hiddenToast(toastOverlay, toastContent), 3000)
-        }
+        showToastDestructive(toastOverlay, toastContent)
         return;
       }
 
       if (discipline.idProfessor[0]) {
         addSerchParamsUrl("idDiscipline", discipline.id)
         dialogOverlay.classList.remove("hidden")
+        toastContent.classList.add("toast-destructive")
       } else {
         discipline.idProfessor.push(professor.id)
         professor.workLoad += discipline.workLoad
@@ -113,8 +124,15 @@ function creatCards() {
 
     buttonUnsubscribe.addEventListener("click", async event => {
 
+      const toastOverlay = document.getElementById("toast-overlay")!
+      const toastContent = document.getElementById("toast-content")!
       const discipline = new Discipline(thisDiscipline)
       const disciplineFiltered = discipline.idProfessor.filter(thisIdProfessor => thisIdProfessor !== professor.id)
+
+      const canSubscribe = verifyIfCanSubscribe(toastOverlay, toastContent)
+      if (!canSubscribe) {
+        return
+      }
 
       discipline.idProfessor = disciplineFiltered
       professor.workLoad -= discipline.workLoad
@@ -123,17 +141,41 @@ function creatCards() {
       await putDiscipline(discipline)
     })
 
-
-    function hiddenToast(toastOverlay: HTMLElement, toastContent: HTMLElement) {
-      toastOverlay.classList.add("hidden")
-      toastContent.classList.remove("toast-destructive")
-      idTimeOut = undefined
-    }
-
   })
 }
+function verifyIfCanSubscribe(toastOverlay: HTMLElement, toastContent: HTMLElement) {
+  if (today > systemDatePlus) {
+    toastContent.innerHTML = `
+      <div class="flex flex-col">
+        <h3 class="text-lg font-medium">Inscrição não realizada!</h3>
+        <p>Período de inscrição finalizado.</p>
+      </div>
+      `
+    showToastDestructive(toastOverlay, toastContent)
+    return false
+  } else {
+    return true
+  }
+}
 
-export function filteringDiscipline(newFilter: IDiscipline[]) {
+function showToastDestructive(toastOverlay: HTMLElement, toastContent: HTMLElement) {
+  toastOverlay.classList.remove("hidden")
+  toastContent.classList.add("toast-destructive")
+  if (!idTimeOut) {
+    idTimeOut = setTimeout(() => hiddenToast(toastOverlay, toastContent), 3000)
+  }
+}
+
+function hiddenToast(toastOverlay: HTMLElement, toastContent: HTMLElement) {
+  toastOverlay.classList.add("hidden")
+  toastContent.classList.remove("toast-destructive")
+  idTimeOut = undefined
+}
+
+export async function filteringDiscipline(newFilter: IDiscipline[]) {
   filteredDisciplines = newFilter
+
+  ulDiscipline.innerHTML = ""
+  await createLoading(ulDiscipline, 1200)
   creatCards()
 }
