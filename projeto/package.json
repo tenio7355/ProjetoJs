@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "",
-    "tail": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch",
+    "tail": "npx tailwindcss -i ./public/style/input.css -o ./public/style/output.css --watch",
     "tsc": "npx tsc -w"
   },
   "keywords": [],
