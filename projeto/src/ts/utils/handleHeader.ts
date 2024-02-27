@@ -17,10 +17,9 @@ export function handleHeader(professor: Professor) {
             removeListener()
         })
         btnLogout.addEventListener("click", event => {
-            console.log("🚀 ~ handleHeader ~ btnLogout:", btnLogout)
             deleteLocalStorage()
             removeListener()
-            window.location.href = "/index.html"
+            window.location.href = "/"
         })
     })
 

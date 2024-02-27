@@ -102,8 +102,8 @@ function creatCards() {
                 professor.workLoad += discipline.workLoad;
                 await putProfessor(professor);
                 await putDiscipline(discipline);
+                location.reload();
             }
-            location.reload();
         });
         buttonUnsubscribe.addEventListener("click", async (event) => {
             const toastOverlay = document.getElementById("toast-overlay");

@@ -12,10 +12,9 @@ export function handleHeader(professor) {
             removeListener();
         });
         btnLogout.addEventListener("click", event => {
-            console.log("🚀 ~ handleHeader ~ btnLogout:", btnLogout);
             deleteLocalStorage();
             removeListener();
-            window.location.href = "/index.html";
+            window.location.href = "/";
         });
     });
     function removeListener() {

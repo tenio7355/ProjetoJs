@@ -38,6 +38,7 @@ buttonApply.addEventListener("click", async (event) => {
         professor.workLoad += discipline.workLoad;
         await putProfessor(professor);
         await putDiscipline(discipline);
+        location.reload();
     }
     removeSerchParamsUrl();
     dialogOverlay.classList.add("hidden");

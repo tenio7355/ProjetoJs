@@ -119,8 +119,8 @@ function creatCards() {
 
         await putProfessor(professor)
         await putDiscipline(discipline)
+        location.reload()
       }
-      location.reload()
     })
 
     buttonUnsubscribe.addEventListener("click", async event => {

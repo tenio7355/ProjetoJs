@@ -47,6 +47,7 @@ buttonApply.addEventListener("click", async event => {
 
     await putProfessor(professor)
     await putDiscipline(discipline)
+    location.reload()
   }
   removeSerchParamsUrl()
   dialogOverlay.classList.add("hidden")
